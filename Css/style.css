@@ -1,0 +1,31 @@
+@import url(header.css);
+@import url(main.css);
+@import url(footer.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+:root {
+    --cor-de-fundo-01: #0C134F;
+    --cor-de-fundo-02: #1D267D;
+    --cor-fonte-01: #5C469C;
+    --cor-fonte-02: #D4ADFC;
+
+    --transicao-04s: all 0.4s;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--cor-de-fundo-01);
+    max-width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.removido {
+    display: none;
+}

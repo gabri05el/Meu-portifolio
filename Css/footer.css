@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root {
+    --cor-de-fundo-01: #0C134F;
+    --cor-de-fundo-02: #1D267D;
+    --cor-fonte-01: #5C469C;
+    --cor-fonte-02: #D4ADFC;
+
+    --gradient: linear-gradient(var(--cor-de-fundo-01)40%, var(--cor-de-fundo-02));
+
+    --fonte-header: 'Quicksand', sans-serif;
+    --fonte-main: 'Lato', sans-serif;;
+
+    --transicao-04s: all 0.4s;
+}
+
+
+.rodape {
+    background-color: var(--cor-de-fundo-02);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer_texto {
+    color: var(--cor-fonte-02);
+    font-size: 1.3rem;
+    padding: 2rem;
+}
+
+.footer_texto h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer_contato  {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    padding: 1rem;
+}
+
+.footer_contato p {
+    color: var(--cor-fonte-02);
+    font-size: 1.3rem;
+}
+
+.footer_contato p i {
+    color: var(--cor-fonte-01);
+    font-size: 1.8rem;
+    padding-right: 1rem;
+}
+
+.footer_contato p a {
+    color: var(--cor-fonte-02);
+    text-decoration: none;
+    padding-left: 0.5rem;
+}
+
+.footer_contato p a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 545px) {
+    .rodape {        
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+}
