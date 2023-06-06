@@ -1,0 +1,125 @@
+* {
+    font-family: sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #181818;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+p a {
+    position: absolute;
+    top: 1%;
+    left: 3%;
+    color: #fff;
+    text-decoration: none;
+    font-family: sans-serif;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    max-width: 37.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.input_conteudo {
+    max-width: 30rem;
+    margin: 0.9rem 0;
+}
+
+.input_conteudo span {
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.controle {
+    -webkit-appearance: none;
+    width: 100%;
+    border-radius: 0.2rem;
+    background: #dfdfdf;
+    height: 1.1rem;
+    outline: none;
+    margin-top: 0.5rem;
+}
+
+.botao-cta {
+    height: 2.5rem;
+    background-color: #3eb72b;
+    border: 0;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    margin-top: 2.5rem;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.conteudo_senha {
+    max-width: 30rem;
+    margin: 0.8rem 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #fff;
+    margin-top: 1.7rem;
+    margin-bottom: 0.5rem;
+}
+
+.senha {
+    height: 3.8rem;
+    background-color: rgb(0, 0, 0, 0.40);
+    border-radius: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border: 1px solid #313131;
+    transition: transform 0.5s;
+}
+
+.senha:hover {
+    transform: scale(1.05);
+}
+
+.ferramenta {
+    color: #fff;
+    position: relative;
+    top: 1.3rem;
+    padding: 0.4rem 0.5rem;
+    background-color: rgb(15,15,15);
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 0.4rem;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.remover {
+    display: none;    
+}
+
+.conteudo_senha:hover .ferramenta {
+    visibility: visible;
+    bottom: 3.1rem;
+    opacity: 1;
+}
