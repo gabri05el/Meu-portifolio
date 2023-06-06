@@ -1,0 +1,750 @@
+@import url('https://fonts.googleapis.com/css2?family= IBM+Plex+Mono & display =swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: blue;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+p a {
+    color: #fff;
+    text-decoration: none;
+    font-family: sans-serif;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+
+/* Header */
+
+header {
+    background-color: blue;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header h1 {
+    color: gray;
+    font-size: 2.5rem;
+}
+
+header span {
+    color: white;
+}
+
+header .navegacao-primaria {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+header .navegacao-primaria li a {    
+    color: white;
+    width: 0px;
+    height: 0xp;
+    font-size: 1.3rem;
+}
+
+header .navegacao-primaria li a::after {
+    content: '';
+    width: 0px;
+    height: 0px;
+    display: block;
+    border-bottom: 4px solid transparent;
+    transition: 0.9s ;
+}
+
+header .navegacao-primaria li a:hover::after {
+    width: 100%;
+    height: 0px;
+    padding: 0px;
+    border-bottom: 4px solid aqua;
+}
+
+header i {
+    color: transparent;
+}
+
+
+/*Dowload cv secao / SECTION*/
+
+.section-div {
+    animation: inicializar 0.7s forwards;
+    background-color: blue;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+    gap: 60px;
+    padding: 60px;
+}
+
+.section-div div {
+    margin-top: 120px;
+    align-self: start;
+    display: grid;
+    gap: 30px;
+}
+
+.section-div div h2 {
+    font-family: 'IBM Plex Mono', monospace;
+    color: gray;
+}
+
+.section-div div p {
+    font-family: 'IBM Plex Mono', monospace;
+    color: gray;
+}
+
+.section-div div a {
+    justify-self: start;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+
+.section-div img {
+    max-width: 100%;
+}
+
+.digitando::after {
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca 0.5s infinite;
+}
+
+@keyframes pisca {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;        
+    }
+}
+
+@keyframes inicializar {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+
+/*Seção principal sobre mim*/
+
+main {
+    background-color: rgb(0, 38, 255);
+    
+}
+
+main .sobre {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    justify-content: center;
+    padding: 40px;
+}
+
+.sobre_titulo {
+    margin: 30px 0;
+    grid-column: 1/-1;
+    text-align: center;
+    color: white;
+}
+
+.sobre_titulo h1 {
+    font-size: 2.5rem;
+    color: gray;
+    margin-bottom: 15px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.sobre_titulo p {
+    color: darkgray;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    position: relative;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.sobre_titulo div {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.sobre_titulo span {
+    display: block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: darkgray;
+}
+
+.sobre img {
+    animation: ladoSecao 0.5s ease-in forwards;
+    cursor: pointer;
+    grid-row: 2;
+    max-width: 100%;
+    border-radius: 4px;
+    filter: blur(0);
+}
+
+.sobre img:hover {
+    transition: 0.5s ease-in;
+    filter: blur(1px);
+}
+
+.sobre_conteudo {
+    grid-column: 2/-1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: darkgray;
+    animation: sobreSecao 0.6s ease-in-out forwards;
+}
+
+.sobre_texto {
+    display: grid;
+    grid-column: 1/-1;
+    grid-template-columns: 1fr 1fr;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.sobre_texto h1 {
+    font-size: 2.3rem;
+    color: white;
+    grid-column: 1/-1;
+}
+
+.sobre_texto h1::after {
+    background-color: gray;
+    height: 6px;
+    width: 60px;
+    margin: 20px 0;
+    content: '';
+    display: block;
+    border-radius: 5px;
+}
+
+.sobre_texto p {
+    font-size: 1.3rem;
+    grid-row: 2;
+    grid-column: 1/-1;
+}
+
+.sobre_info {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1/-1;
+    gap: 15px;
+}
+
+.sobre_info i {
+    color: aqua;
+    display: inline-block;
+    padding-right: 15px;
+    font-size: 1.5rem;
+}
+
+.sobre_info p {
+    font-size: 0.9rem;
+    font-family: 'IBM Plex Mono', monospace; 
+}
+
+@keyframes sobreSecao {
+    from {
+        transition: 0.5s;
+        transform: translate3d(60px, 0, 0);
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes ladoSecao {
+    from {
+        transition: 0.5s;
+        transform: translate3d(-60px, 0, 0);
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+
+/*Responsividade*/
+
+@media(max-width: 992px) {
+    /*HEADER */
+    header {
+        justify-content: space-between;
+        padding: 30px 70px;
+    }
+
+    header .navegacao-primaria {
+        display: none;
+    }
+    
+    header .navegacao-primaria.ativado {
+        background: linear-gradient(blue 20%, darkblue);
+        position: absolute;
+        display: grid;
+        top: 80px;
+        color: white;
+        z-index: 1;
+        padding: 30px;
+        font-size: 1.6rem;
+        font-weight: bold;
+        border-radius: 0 0 10px 10px;
+        right: 20px;
+        animation: sobreSecao 0.8s ease-in-out forwards;
+    }
+
+    header i {
+        color: white;
+        font-size: 3rem;
+    }
+
+
+    /* SECTION*/
+    .section-div img {
+        display: none;
+    }
+
+    .section-div {
+        background-image: url(../img/futurista.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /*MAIN*/
+    .sobre img {
+        grid-column: 1/-1;
+        justify-content: center;
+    }
+
+    .sobre_conteudo {        
+        grid-column: 1/-1;
+    }
+}
+
+
+/*Secão Service / SECTION*/
+.services {
+    margin-top: -30px;
+    padding: 60px;
+    background-color: darkblue;
+}
+
+
+.my_services {
+    padding: 60px;
+    color: white;
+}
+
+.my_services ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.my_services ul li {
+    background-color: #222;
+    border-radius: 6px;
+    max-width: 300px;
+    height: 300px;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+    display: grid;
+    gap: 30px;
+    text-align: center;
+    align-content: center;
+}
+
+.my_services ul li i {
+    font-size: 2.7rem;
+    color: aqua;
+}
+
+.my_services ul li h3 {
+    color: white;
+    font-size: 1.6rem;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.my_services ul li p {
+    color: gray;
+    font-size: 1.1rem;
+}
+
+.my_services li::before {
+    content: '';
+    transition: 0.5s ease-in-out;
+    border-radius: 6px;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent;
+}
+
+.my_services li::after {
+    content: '';
+    transition: 0.5s ease-in-out;
+    border-radius: 6px;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    bottom: -2px;
+    left: -2px;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+}
+
+.my_services li:hover::before {
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid aqua;
+    border-right: 2px solid aqua;
+}
+
+.my_services li:hover::after {
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid aqua;
+    border-left: 2px solid aqua;
+}
+
+
+/* RESUMO (Experiencia / Diplomas) */
+.my_resume {
+    color: white;
+}
+
+.resume_generica {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 30px;
+    justify-content: center;
+    align-items: start;
+}
+
+.resume_generica h2 {
+    background-color: darkblue;
+    font-family: 'IBM Plex Mono', monospace;
+    justify-self: start;
+    font-size: 1.6rem;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.resume_generica h2 i {
+    margin-right: 10px;
+}
+
+/*EXPERIENCIA*/
+.experience {
+    grid-column: 1;
+    grid-row: 1;
+    margin-bottom: 30px;
+}
+
+.experience_content div {
+    background-color: darkcyan;
+    display: none;
+    animation: ladoSecao 0.5s ease-in-out forwards;
+    position: relative;
+    padding: 40px;
+}
+
+.experience_content div.ativo {
+    display: block;
+}
+
+.experience_content div::before {
+    content: '';
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid darkcyan;
+    position: absolute;
+    display: inline-block;
+    top: -20px;
+    left: 30px;
+}
+
+.experience_content div span {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: bold;
+    color: darkblue;
+}
+
+.experience_content div h3 {
+    font-family: 'IBM Plex Mono', monospace;
+    margin: 10px 0;
+}
+
+.experience_content div p {
+    color: darkgray;
+    font-size: 1.1rem;
+}
+
+.experience_content ul {
+    color: gray;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.experience_content ul li.ativo {
+    color: #222;
+}
+
+/*MEUS DIPLOMAS*/
+.education {
+    grid-column: 2;
+    grid-row: 1;
+    margin-bottom: 30px;
+}
+
+.education_content div {
+    background-color: darkcyan;
+    display: none;
+    animation: sobreSecao 0.5s ease-in-out forwards;
+    position: relative;
+    padding: 40px;
+}
+
+.education_content div.ativo {
+    display: block;
+}
+
+.education_content div::before {
+    content: '';
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid darkcyan;
+    position: absolute;
+    display: inline-block;
+    top: -20px;
+    left: 30px;
+}
+
+.education_content div span {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: bold;
+    color: darkblue;
+}
+
+.education_content div h3 {
+    font-family: 'IBM Plex Mono', monospace;
+    margin: 10px 0;
+}
+
+.education_content div p {
+    color: darkgray;
+    font-size: 1.1rem;
+}
+
+.education_content ul {
+    color: gray;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.education_content ul li.ativo {
+    color: #222;
+}
+
+
+/*Cursos e Skill*/
+
+.cursos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: start;
+    margin-top: 50px;
+    padding: 30px;
+    gap: 30px;
+    justify-content: center;    
+}
+
+.my_skill {
+    display: grid;
+}
+
+.my_skill h2 {
+    background-color: darkblue;
+    font-family: 'IBM Plex Mono', monospace;
+    justify-self: start;
+    font-size: 1.5rem;
+    padding: 10px 30px;
+    margin-bottom: 30px;
+    border-radius: 6px;
+}
+
+.my_skill h2 i {
+    padding-right: 10px;
+}
+
+.skill_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1/2;
+    font-size: 1.5rem;
+    gap: 40px;
+    margin-top: 10px;
+}
+
+.skill_content h3 {
+    font-size: 1.5rem;
+}
+
+.skill_content ul {
+    display: flex;
+}
+
+
+/*FUN FACTS*/
+
+.funfacts {
+    display: grid;
+    grid-column: 3/-1;
+    grid-row: 1;
+    grid-template-columns: 1fr 1fr;
+}
+
+.funfacts h2 {    
+    background-color: darkblue;
+    font-family: 'IBM Plex Mono', monospace;
+    justify-self: start;
+    grid-column: 1/-1;
+    font-size: 1.5rem;
+    padding: 10px 30px;
+    margin-bottom: 30px;
+    border-radius: 6px;
+}
+
+.funfacts h2 i {
+    padding-right: 10px;
+}
+
+.funfacts ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.funfacts ul li {
+    background-color: darkblue;
+    border: solid 3px aquamarine;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-self: start;
+    width: 200px;
+    height: 100px;
+}
+
+.funfacts ul li i {
+    color: aqua;
+    border-right: 2px solid gray;
+    grid-row: 1/3;
+    margin: auto;
+    padding: 20px;
+    font-size: 2rem;
+}
+
+.funfacts ul li span {
+    color: white;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.funfacts ul li p {
+    color: aquamarine;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+@media (max-width: 1089px) {
+    .resume_generica .experience_content,.education_content {
+        justify-self: center;
+        grid-column: 1/-1;
+    }
+    
+    .resume_generica .experience {
+        justify-self: center;
+        grid-column: 1/-1;
+        grid-row: 1;        
+    }
+
+    .resume_generica .education {
+        justify-self: center;
+        grid-column: 1/-1;
+        grid-row: 3;
+        margin: 30px 0;
+    }
+
+    .cursos {
+        grid-template-columns: 1fr;
+    }
+    
+    .cursos .funfacts {
+        justify-self: center;
+        text-align: center;
+        grid-template-columns: 1fr;
+        grid-column: 1;
+        margin-bottom: 30px;
+    }
+
+    .cursos .funfacts h2 {
+        justify-self: center;
+    }
+    
+    .cursos .my_skill {
+        justify-self: center;
+        text-align: center;
+        grid-template-columns: 1fr;
+        grid-column: 1/-1;
+    }
+    
+    .cursos .my_skill h2 {
+        justify-self: center;
+    }
+}

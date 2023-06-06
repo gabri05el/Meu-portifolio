@@ -1,0 +1,59 @@
+:root {
+    --cor-fonte-branco: white;
+    --cor-de-fundo: darkred;
+    
+    --fonte-do-link: 'Sono', sans-serif;
+    --fonte-do-texto:  'Montserrat', sans-serif;
+}
+
+
+p a {
+    color: #000;
+    text-decoration: none;
+    font-family: var(--fonte-do-link);
+    font-size: 1.2rem;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+.corpo_com__cor {
+    background: var(--cor-de-fundo);
+    color: var(--cor-fonte-branco);
+}
+
+.cabecalho {
+    text-align: center;
+    font-family: var(--fonte-do-texto);
+}
+
+/*MENU*/
+.conteudo__main {
+    display: flex;
+    flex-direction: row;
+    gap: 6rem;
+    padding-top: 1rem;
+    padding-left: 2rem;
+}
+
+.footer__section_paises {
+    background: linear-gradient(135deg, rgb(83, 7, 7) 31%, hsla(0, 0%, 0%, 1) 76%);
+    border-radius: 30px;
+    padding: 1rem 1rem;
+    margin-left: 12%;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    width: 75%;
+    color: var(--cor-fonte);
+    font-size: var(--tamanho-do-texto);
+    font-family: var(--fonte-do-texto);
+}
+
+/*CURIOSIDADE*/
+.main__curiosidade {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0 0 1rem;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./Css/style.css">        
+        <title>Login Modo DARK/LIGHT</title>
+    </head>
+    <body>
+        <p><a href="../../index.html">volta para o menu</a></p>
+        <main class="main_conteudo_principal">
+            <form action="" id="login_form" class="login_form">
+                <div class="form_cabecalho">
+                    <h1>Login</h1>
+                    <i id="modo_icone" class="fa-solid fa-moon modo_icone"></i>
+                </div>
+                <div class="social_media">
+                    <a href="#"><img src="./img/facebook.png" alt="logo do Facebook"></a>
+                    <a href="#"><img src="./img/google.png" alt="logo do Google"></a>
+                    <a href="#"><img src="./img/github.png" alt="logo do Github"></a>
+                </div>
+                <div class="inputs">
+                    <div class="input_caixa">
+                        <label for="name">
+                            Nome
+                            <div class="input_campos">
+                                <i class="fa-solid fa-user"></i>
+                                <input type="text" id="name" name="name">
+                            </div>
+                        </label>
+                    </div>
+                    <div class="input_caixa">
+                        <label for="email">
+                            E-mail
+                            <div class="input_campos">
+                                <i class="fa-solid fa-envelope"></i>
+                                <input type="email" id="email" name="email">
+                            </div>
+                        </label>
+                    </div>
+                    <div class="input_caixa">
+                        <label for="password">
+                            Senha
+                            <div class="input_campos">
+                                <i class="fa-solid fa-key"></i>
+                                <input type="password" id="password" name="password">
+                            </div>
+                        </label>
+                        <div class="senha_esquecida">
+                            <a href="#">
+                                Esqueceu sua senha ?
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="login_button">
+                    Login
+                </button>
+            </form>
+        </main>
+        <script src="./Js/script.js"></script>
+    </body>
+</html>

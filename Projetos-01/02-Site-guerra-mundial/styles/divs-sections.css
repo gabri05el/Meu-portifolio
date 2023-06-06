@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+    --cor-fonte: white;
+    --tamanho-do-texto: 1.2rem;
+    --fonte-do-texto:  'Montserrat', sans-serif;
+}
+
+.conteudo__texto{
+    text-align: center;
+    color: var(--cor-fonte);
+    font-family: var(--fonte-do-texto);
+}
+
+.main__div_nome{
+    background: linear-gradient(135deg, hsla(0, 100%, 27%, 1) 31%, hsla(0, 0%, 0%, 1) 76%);
+    border-radius: 30px;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+    margin-left: 18%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 75%;
+    color: var(--cor-fonte);
+    font-family: var(--fonte-do-texto);
+}
+
+.main__div_texto{
+    background: linear-gradient(135deg, hsla(0, 100%, 27%, 1) 31%, hsla(0, 0%, 0%, 1) 76%);
+    border-radius: 30px;
+    padding: 1em 0;
+    margin-bottom: 1rem;
+    margin-left: 18%;
+    width: 75%;
+    font-size: var(--tamanho-do-texto);
+}
+
+/*MENU*/
+
+.main__divs {
+    color: var(--cor-fonte);
+    font-size: var(--tamanho-do-texto);
+    font-family: var(--fonte-do-texto);
+    width: 40%;
+}
+
+/*CURIOSIDADE*/
+
+.section__curiosidade {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem 4rem;
+    color: var(--cor-fonte);
+    font-size: var(--tamanho-do-texto);
+    font-family: var(--fonte-do-texto);
+    width: 100%;
+}
+
+.div__texto_curiosidade {    
+    width: 30%;
+}

@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@300;500&display=swap');
+
+:root {
+    --cor-fonte-link-hover: gray;
+    --cor-fonte-braco: white;
+    --tamanho-do-texto: 1.2rem;
+    --fonte-do-link: 'Sono', sans-serif;
+}
+
+.footer__section_link {
+    background: linear-gradient(135deg, hsla(0, 100%, 27%, 1) 31%, hsla(0, 0%, 0%, 1) 76%);
+    border-radius: 30px;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 18%;
+    width: 75%;
+    font-size: var(--tamanho-do-texto);
+}
+
+.links {
+    color: var(--cor-fonte-braco);
+    text-decoration: none;
+    font-family: var(--fonte-do-link);
+}
+
+.links:hover {
+    color: var(--cor-fonte-link-hover);
+    text-decoration: underline;
+}
