@@ -28,6 +28,9 @@ body {
     max-width: 100%;
 }
 
+.volta {
+    color: var(--cor-fonte);    
+}
 .icone__imagem {
     width: 3rem;
     height: 3rem;
