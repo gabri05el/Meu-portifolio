@@ -185,7 +185,20 @@
         margin-top: 0.5rem;
     }
 }
-
+@media(max-width: 500px) {
+    .formacao li {        
+        font-size: 1rem;                
+        padding: 0.8rem;     
+    }
+    .certificado {        
+        padding: 1rem;        
+    }
+    
+    .certificado span, h4, p {
+        font-size: 1rem;
+        margin: 0.5rem 0;
+    }
+}
 
 /* CONTATOS */
 
