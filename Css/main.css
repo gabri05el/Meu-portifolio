@@ -323,9 +323,11 @@
 }
 @media (max-width: 525px) {
     .projetos {
-        margin: 1rem;
+        margin: 0.5rem;
     }
     .projetos p {
-        padding: 1rem;
+        font-size: 0.8rem;
+        padding: 0.5rem;
+        margin: 0.6rem;
     }
 }
