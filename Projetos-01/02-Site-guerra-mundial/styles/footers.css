@@ -1,0 +1,40 @@
+/* Imagem no Fundo da Tela do Index.html */
+
+.footer__section_link {
+    background: var(--cor-linear-gradient);
+    font-size: var(--tamanho-do-texto);
+    display: flex;
+    justify-content: space-around;
+    width: 75%;
+    padding: 1rem 0;
+    margin-left: 13%;
+    border-radius: 1.8rem;
+}
+
+/* menus.html */
+
+.footer__section_paises {
+    background-image: var(--cor-linear-gradient-footer);
+    width: 75%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 1.8rem;
+    padding: 1.4rem 1.4rem;
+    margin-left: 13%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.alianca {
+    color: var(--cor-fonte-branco);
+    font-family: var(--fonte-do-texto);
+    font-size: var(--tamanho-do-subtitulo);
+}
+
+.nome__paises {
+    color: var(--cor-fonte-branco);
+    font-family: var(--fonte-do-texto);
+    font-size: var(--tamanho-do-texto);    
+}
+
+/* curiosidades.html */
