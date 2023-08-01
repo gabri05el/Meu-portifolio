@@ -1,5 +1,4 @@
 /* Imagem no Fundo da Tela do Index.html */
-
 .footer__section_link {
     background: var(--cor-linear-gradient);
     font-size: var(--tamanho-do-texto);
@@ -12,7 +11,6 @@
 }
 
 /* menus.html */
-
 .footer__section_paises {
     background-image: var(--cor-linear-gradient-footer);
     width: 75%;
@@ -36,5 +34,3 @@
     font-family: var(--fonte-do-texto);
     font-size: var(--tamanho-do-texto);    
 }
-
-/* curiosidades.html */
