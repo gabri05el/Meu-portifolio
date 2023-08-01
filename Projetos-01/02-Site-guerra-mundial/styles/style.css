@@ -54,10 +54,6 @@
 
 /* Imagem no Fundo da Tela do Index.html */
 
-.pagina__principal {
-    overflow: hidden;
-}
-
 .imagem__abaixo {
     position: absolute;
     width: 100%;
@@ -78,5 +74,3 @@
     position: absolute;    
     z-index: -1;
 }
-
-/* curiosidades.html */
