@@ -6,6 +6,7 @@
 }
 
 .volta {
+    color: var(--cor-fonte-link-hover);
     position: absolute;
     top: 0.9rem;
     left: 0.6rem;
