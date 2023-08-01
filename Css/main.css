@@ -328,10 +328,6 @@
     text-decoration: underline;
 }
 
-.projetos p:nth-child(2) {
-    display: none;
-}
-
 @media (max-width: 725px) {
     .projetos {
         grid-template-columns: 1fr 1fr;
