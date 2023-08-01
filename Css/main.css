@@ -328,7 +328,7 @@
     text-decoration: underline;
 }
 
-.projetos p a:nth-child(2) {
+.projetos p:nth-child(2) {
     display: none;
 }
 
