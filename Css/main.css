@@ -1,27 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-
-:root {
-    --cor-de-fundo-01: #0C134F;
-    --cor-de-fundo-02: #1D267D;
-    --cor-fonte-01: #5C469C;
-    --cor-fonte-02: #D4ADFC;
-
-    --gradient: linear-gradient(var(--cor-de-fundo-01)40%, var(--cor-de-fundo-02));
-
-    --fonte-header: 'Quicksand', sans-serif;
-    --fonte-main: 'Lato', sans-serif;;
-
-    --transicao-04s: all 0.4s;
-}
-
 .conteudo_principal {
     display: flex;
     flex-direction: column;
     margin: 1rem 0;
     gap: 2rem;
 }
-
 
 /* BIOGRAFIA */
 
@@ -64,7 +46,7 @@
 }
 
 .imagem_principal {    
-    cursor: pointer;
+    cursor: default;
     border-radius: 1.5rem;
     transition: var(--transicao-04s);
 }
@@ -111,7 +93,7 @@
 
 .formacao h2 {
     color: var(--cor-fonte-01);    
-    cursor: pointer;
+    cursor: default;
     font-size: 2.2rem;
     border: 0.2rem solid var(--cor-de-fundo-02);
     border-radius: 0.5rem;
@@ -215,7 +197,7 @@
 .section_contatos h2 {
     color: var(--cor-fonte-01);    
     text-align: center;
-    cursor: pointer;
+    cursor: default;
     font-size: 2.2rem;
     margin: 1rem 0;
     transition: var(--transicao-04s);
@@ -244,7 +226,8 @@
 }
 
 .contatos_01 p, .contatos_02 p {
-    display: flex;    
+    display: flex;
+    white-space: nowrap;
     gap: 1rem;
 }
 
@@ -262,21 +245,23 @@
     text-decoration: underline;
 }
 
-@media (max-width: 820px) {
+@media (max-width: 1200px) {
     .contatos {
         display: grid;
         grid-template-columns: 1fr;
     }
+}
+@media (max-width: 820px) {
     .contatos_01, .contatos_02  {
         margin-left: 1rem;
     }
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .contatos_01 p, .contatos_02 p {
         font-size: 1rem;
     }
     .contatos_01 p i, .contatos_02 p i {
-            font-size: 1.2rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -293,7 +278,7 @@
 .section_projetos h2 {
     color: var(--cor-fonte-01);
     text-align: center;
-    cursor: pointer;
+    cursor: default;
     font-size: 2.2rem;
     transition: var(--transicao-04s);
 }
@@ -334,7 +319,7 @@
         margin: 2rem;
     }
 }
-@media (max-width: 525px) {
+@media (max-width: 600px) {
     .projetos {
         margin: 0.5rem;
     }
