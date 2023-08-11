@@ -1,18 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-
-:root {
-    --cor-de-fundo-01: #0C134F;
-    --cor-de-fundo-02: #1D267D;
-    --cor-fonte-01: #5C469C;
-    --cor-fonte-02: #D4ADFC;
-
-    --fonte-header: 'Quicksand', sans-serif;
-    --fonte-main: 'Lato', sans-serif;;
-
-    --transicao-04s: all 0.4s;
-}
-
 .cabecalho {
     background-color: var(--cor-de-fundo-02);
     color: var(--cor-fonte-02);
