@@ -71,23 +71,47 @@ botaoprojetos.addEventListener('click', () => {
 const botao_01 = document.getElementById("formacao_01");
 const botao_02 = document.getElementById("formacao_02");
 const botao_03 = document.getElementById("formacao_03");
+const botao_04 = document.getElementById("formacao_04");
+const botao_05 = document.getElementById("formacao_05");
 
 const certificado_01 = document.querySelector(".certificados_01");
 const certificado_02 = document.querySelector(".certificados_02");
 const certificado_03 = document.querySelector(".certificados_03");
+const certificado_04 = document.querySelector(".certificados_04");
+const certificado_05 = document.querySelector(".certificados_05");
 
 botao_01.addEventListener('click', () => {
     certificado_01.classList.remove("removido");
     certificado_02.classList.add("removido");
     certificado_03.classList.add("removido");
+    certificado_04.classList.add("removido");
+    certificado_05.classList.add("removido");
 })
 botao_02.addEventListener('click', () => {
     certificado_02.classList.remove("removido");
     certificado_01.classList.add("removido");
     certificado_03.classList.add("removido");
+    certificado_04.classList.add("removido");
+    certificado_05.classList.add("removido");
 })
 botao_03.addEventListener('click', () => {
     certificado_03.classList.remove("removido");
     certificado_01.classList.add("removido");
     certificado_02.classList.add("removido");
+    certificado_04.classList.add("removido");
+    certificado_05.classList.add("removido");
+})
+botao_04.addEventListener('click', () => {
+    certificado_04.classList.remove("removido");
+    certificado_01.classList.add("removido");
+    certificado_02.classList.add("removido");
+    certificado_03.classList.add("removido");
+    certificado_05.classList.add("removido");
+})
+botao_05.addEventListener('click', () => {
+    certificado_05.classList.remove("removido");
+    certificado_01.classList.add("removido");
+    certificado_02.classList.add("removido");
+    certificado_03.classList.add("removido");
+    certificado_04.classList.add("removido");
 })
