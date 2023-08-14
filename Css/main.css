@@ -5,6 +5,7 @@
     gap: 2rem;
 }
 
+
 /* BIOGRAFIA */
 
 .section_biografia {
@@ -107,19 +108,19 @@
 }
 
 .formacao ul {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     list-style: none;
-    gap: 2rem;
 }
 
 .formacao li {
+    white-space: nowrap;
     text-align: center;
     font-size: 1.2rem;
+    padding: 1rem;
+    margin: 1rem;
     border: 0.2rem solid var(--cor-de-fundo-02);
     border-radius: 0.5rem;
-    padding: 1rem;
     cursor: pointer;
 }
 
@@ -127,7 +128,7 @@
     border:0.2rem solid var(--cor-fonte-01);
 }
 
-.certificados_01, .certificados_02, .certificados_03 {
+.certificados_01, .certificados_02, .certificados_03, .certificados_04, .certificados_05 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
@@ -144,6 +145,11 @@
     margin: 1rem 0;
 }
 
+@media (max-width: 900px) {
+    .formacao ul {
+        grid-template-columns: 1fr;
+    }
+}
 @media (max-width: 720px) {
     .formacao {
         display: grid;
@@ -154,13 +160,9 @@
         text-align: center;
         grid-row: 1/1;
     }
-    .formacao ul {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
 }
 @media(max-width: 600px) {
-    .certificados_01, .certificados_02, .certificados_03 {        
+    .certificados_01, .certificados_02, .certificados_03, .certificados_04, .certificados_05 {        
         gap: 0.5rem;
     }
     .certificado {        
@@ -257,6 +259,9 @@
     }
 }
 @media (max-width: 600px) {
+    .contatos {
+        justify-self: center;
+    }
     .contatos_01 p, .contatos_02 p {
         font-size: 1rem;
     }
