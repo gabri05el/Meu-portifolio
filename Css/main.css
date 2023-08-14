@@ -251,6 +251,7 @@
     .contatos {
         display: grid;
         grid-template-columns: 1fr;
+        justify-self: center;
     }
 }
 @media (max-width: 820px) {
@@ -259,8 +260,8 @@
     }
 }
 @media (max-width: 600px) {
-    .contatos {
-        justify-self: center;
+    .contatos_01, .contatos_02  {
+        margin-left: 0;
     }
     .contatos_01 p, .contatos_02 p {
         font-size: 1rem;
