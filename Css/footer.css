@@ -55,3 +55,11 @@
         padding: 1rem;
     }
 }
+@media (max-width: 600px) {
+    .footer_contato {
+        justify-self: center;
+    }
+    .footer_contato p {
+        font-size: 1rem;
+    }
+}
