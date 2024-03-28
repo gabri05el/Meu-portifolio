@@ -1,0 +1,9 @@
+.main__biografia_img {
+    cursor: default;
+    border-radius: 1.5rem;
+    transition: var(--transicao-04s);
+}
+
+.main__biografia_img:hover {
+    transform: scale(0.9);
+}
