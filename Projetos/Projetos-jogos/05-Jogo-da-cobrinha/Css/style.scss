@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+
+$fonte-do-titulo: 'Tilt Prism', cursive;
+$fonte-do-texto: Verdana, Geneva, Tahoma, sans-serif;
+
+$cor-de-fundo-gradient: linear-gradient(#b4b3b3, #834747) no-repeat;
+$cor-preto: #111;
+$cor-branco: #fff;
+$cor-cinza: #464545;
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: $cor-de-fundo-gradient;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100%;
+    min-height: 100vh;
+    .titulo {
+        position: absolute;
+        top: 10%;
+        left: 4%;
+        font-family: $fonte-do-texto;
+        font-size: 2rem;
+        font-weight: 200;
+    }
+    .pontuacao {
+        text-align: center;
+        p {
+            font-family: $fonte-do-texto;
+            font-weight: 400;
+            font-size: 1.5rem;
+            span {
+                font-family: $fonte-do-titulo;
+                font-size: 2rem;
+                font-weight: 700;
+            }
+        }
+    }
+    .jogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .game__over {
+            background-color: $cor-preto;
+            color: $cor-branco;
+            position: absolute;
+            top: 40%;
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 3rem;
+            border-radius: 2rem;
+            .over {
+                font-family: $fonte-do-texto;
+                font-size: 3rem;
+            }
+            .pontuacao__total {
+                font-family: $fonte-do-texto;
+                font-size: 1.8rem;
+                margin: 0.8rem 0;
+                span {
+                    font-family: $fonte-do-titulo;
+                }
+            }
+            .botao__play {
+                background: transparent;
+                color: $cor-branco;
+                cursor: pointer;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-family: $fonte-do-texto;
+                font-size: 1.5rem;
+                padding: 1rem;
+                border: 1px solid $cor-branco;
+                border-radius: 1rem;
+                &:hover {
+                    color: $cor-cinza;
+                    border: 1px solid $cor-cinza;
+                    transition: all 0.8s;
+                }
+            }
+        }
+        canvas {
+            background-color: $cor-preto;
+        }
+    }
+    .velocidade__configuracao {
+        background: $cor-branco;
+        position: absolute;
+        top: 25%;
+        left: 5%;
+        border-radius: 1rem;
+        padding: 1.5rem;
+        .titulo__confg {
+            font-family: $fonte-do-texto;
+            font-weight: 400;
+            font-size: 2rem;
+            text-align: center;
+            margin: 0 1rem;
+        }
+        .velocidade {
+            background: $cor-preto;
+            color: $cor-branco;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 1rem 0;
+            padding: 0.5rem;
+            border-radius: 0.8rem;
+            &:hover {
+                background-color: #464545;
+                transition: all .5s;
+            }
+            h3 {
+                font-family: $fonte-do-texto;
+                text-align: center;
+                font-weight: 200;
+                font-size: 1.6rem;
+                padding: 1rem 0;
+            }
+        }
+        .confg__velocidade_ativada {
+            background: $cor-cinza;
+        }
+    }
+}

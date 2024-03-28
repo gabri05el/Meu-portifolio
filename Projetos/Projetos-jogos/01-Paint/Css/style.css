@@ -1,0 +1,124 @@
+:root {
+    --cor-de-fundo-gadient: linear-gradient(#3b2e2e, #464444) no-repeat;
+    --cor-branco: #ffffff;
+    --cor-cinza: #808080;
+    --cor-preto: #000000;
+    --cor-preto-com-opacidade: #000000e6;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: var(--cor-de-fundo-gadient);
+    width: 100%;
+    min-height: 100vh;
+}
+
+.titulo {
+    color: var(--cor-branco);
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    margin: 1rem 0 0.3rem 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+canvas {
+    background-color: var(--cor-branco);
+    border-radius: 1rem;
+    box-shadow: 0 0 5px var(--cor-preto-com-opacidade);
+}
+
+.container div {
+    background-color: var(--cor-branco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 1rem;
+    margin-left: 1.5rem;
+}
+
+.caixa__ferramentas {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem;
+}
+
+.botao__ferramentas, 
+.botao__tamanho {
+    background: none;
+    color: var(--cor-cinza);
+    border: none;
+    cursor: pointer;
+    padding: 0.4rem;
+    margin: 0.5rem;
+}
+
+.botao__ferramentas > span {
+    font-size: 2rem;
+}
+
+.ferramenta__ativada {
+    background-color: var(--cor-cinza);
+    color: var(--cor-branco);
+    border-radius: 0.4rem;
+}
+
+.cor__input {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.cor__input::-webkit-color-swatch {
+    border-radius: 100px;
+}
+
+.botao__tamanho {
+    height: auto;
+    padding: 1rem;    
+}
+
+.botao__tamanho > span {
+    display: block;
+    width: 100px;
+}
+
+.botao__tamanho[data-tamanho="5"] > span, 
+.botao__tamanho[data-tamanho="10"] > span, 
+.botao__tamanho[data-tamanho="20"] > span, 
+.botao__tamanho[data-tamanho="30"] > span {
+    background-color: var(--cor-preto);
+    border-radius: 100px;
+}
+
+.botao__tamanho[data-tamanho="5"] > span {
+    height: 5px;
+}
+
+.botao__tamanho[data-tamanho="10"] > span {
+    height: 10px;
+}
+
+.botao__tamanho[data-tamanho="20"] > span {
+    height: 20px;
+}
+
+.botao__tamanho[data-tamanho="30"] > span {
+    height: 30px;
+}
