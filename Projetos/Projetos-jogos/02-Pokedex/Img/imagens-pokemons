@@ -1,0 +1,61 @@
+    <-- Todos os modos das imagens dos pokemons -->
+    
+    // imagemDoPokemon.src = dados.sprites.versions['generation-viii'].icons.front_default; "898"
+
+    // imagemDoPokemon.src = dados.sprites.versions['generation-vii'].icons.front_default; "807"
+
+    // imagemDoPokemon.src = dados.sprites.versions['generation-vii']['ultra-sun-ultra-moon'].front_default; "807"
+    // imagemDoPokemon.src = dados.sprites.versions['generation-vii']['ultra-sun-ultra-moon'].front_shiny; "807"
+
+    // imagemDoPokemon.src = dados.sprites.versions['generation-vi']['omegaruby-alphasapphire'].front_default; "721"
+    // imagemDoPokemon.src = dados.sprites.versions['generation-vi']['omegaruby-alphasapphire'].front_shiny; "721"
+
+    // imagemDoPokemon.src = dados.sprites.versions['generation-vi']['x-y'].front_default; "721"
+    // imagemDoPokemon.src = dados.sprites.versions['generation-vi']['x-y'].front_shiny; "721"
+    
+    // imagemDoPokemon.src = dados.sprites.versions['generation-v']['black-white'].animated.front_default; "649"
+    // imagemDoPokemon.src = dados.sprites.versions['generation-v']['black-white'].animated.front_shiny; "649"
+    // imagemDoPokemon.src = dados.sprites.versions['generation-v']['black-white'].front_default;
+    // imagemDoPokemon.src = dados.sprites.versions['generation-v']['black-white'].front_shiny; "898"
+
+    // imagemDoPokemon.src = dados.sprites.versions['generation-iv']['diamond-pearl'].front_default; "493"
+    // imagemDoPokemon.src = dados.sprites.versions['generation-iv']['diamond-pearl'].front_shiny; "493"
+    
+    // imagemDoPokemon.src = dados.sprites.versions['generation-iv']['heartgold-soulsilver'].front_default; "493"
+    // imagemDoPokemon.src = dados.sprites.versions['generation-iv']['heartgold-soulsilver'].front_shiny; "493"
+
+    // imagemDoPokemon.src = dados.sprites.versions['generation-iv']['platinum'].front_default; "493"
+    // imagemDoPokemon.src = dados.sprites.versions['generation-iv']['platinum'].front_shiny; "493"
+    
+    // imagemDoPokemon.src = dados.sprites.versions['generation-iii']['emerald'].front_default; "386"
+    // imagemDoPokemon.src = dados.sprites.versions['generation-iii']['emerald'].front_shiny; "386"
+    
+    // imagemDoPokemon.src = dados.sprites.versions['generation-iii']['firered-leafgreen'].front_default; "386"
+    // imagemDoPokemon.src = dados.sprites.versions['generation-iii']['firered-leafgreen'].front_shiny; "386"
+
+    // imagemDoPokemon.src = dados.sprites.versions['generation-iii']['ruby-sapphire'].front_default; "386"
+    // imagemDoPokemon.src = dados.sprites.versions['generation-iii']['ruby-sapphire'].front_shiny; "386"
+
+    // imagemDoPokemon.src = dados.sprites.versions['generation-ii']['crystal'].front_transparent; "251
+    // imagemDoPokemon.src = dados.sprites.versions['generation-ii']['crystal'].front_shiny_transparent; "251"
+
+    // imagemDoPokemon.src = dados.sprites.versions['generation-ii']['gold'].front_default; "251"
+    // imagemDoPokemon.src = dados.sprites.versions['generation-ii']['gold'].front_shiny; "251"
+    // imagemDoPokemon.src = dados.sprites.versions['generation-ii']['gold'].front_transparent; "251"
+
+    // imagemDoPokemon.src = dados.sprites.versions['generation-ii']['silver'].front_default; "251"
+    // imagemDoPokemon.src = dados.sprites.versions['generation-ii']['silver'].front_shiny; "251"
+    // imagemDoPokemon.src = dados.sprites.versions['generation-ii']['silver'].front_transparent; "251"
+
+    // imagemDoPokemon.src = dados.sprites.versions['generation-i']['red-blue'].front_default; "151"
+    // imagemDoPokemon.src = dados.sprites.versions['generation-i']['red-blue'].front_transparent; "151"
+    // imagemDoPokemon.src = dados.sprites.versions['generation-i']['red-blue'].front_gray; "151"
+    
+    // imagemDoPokemon.src = dados.sprites.versions['generation-i']['yellow'].front_default; "151"
+    // imagemDoPokemon.src = dados.sprites.versions['generation-i']['yellow'].front_transparent; "151"
+    // imagemDoPokemon.src = dados.sprites.versions['generation-i']['yellow'].front_gray; "151"
+
+
+V    = 3 2 3 3 2 => 13
+Vii  = 2 2 1 1 1 => 7
+Viii = 1 1 2 2 1 => 7
