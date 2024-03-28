@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+:root {
+    --cor-azul: #0425e0;
+    --cor-roxo: #5b03c0;
+    --cor-ciano: #00ffff;
+    --cor-laranja: #ff8c00;
+    --cor-de-fundo-gradient: linear-gradient(#5b03c0 20%, #0425e0);
+
+    --fonte-principal: 'Orbitron', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: var(--cor-de-fundo-gradient);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: 100vh;
+}
+
+.titulo {
+    color: var(--cor-ciano);
+    font-family: var(--fonte-principal);
+    letter-spacing: 0.2rem;
+}
+
+.cronometro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tempo, 
+.separador {
+    color: var(--cor-ciano);
+    font-family: var(--fonte-principal);
+    font-size: 2rem;
+    padding: 3rem 0;
+}
+
+.tempo:nth-child(1), 
+.tempo:nth-child(3) {
+    color: var(--cor-laranja);
+}
+
+.separador {
+    margin: 0 0.4rem;
+}
+
+.botoes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 18.75rem;
+}
+
+.botao, 
+.botao__iniciar {
+    cursor: pointer;
+    font-family: var(--fonte-principal);
+    font-weight: bolder;
+    font-size: 1.3rem;
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--cor-ciano);
+    border-radius: 0.3rem;
+    transition: all 0.4s;
+}
+
+.botao:hover,
+.botao__iniciar:hover {
+    scale: 1.1;
+}
+
+.botao__iniciar {
+    background-color: var(--cor-ciano);
+    color: var(--cor-azul);
+}
+
+.botao {
+    background-color: transparent;
+    color: var(--cor-ciano);
+}
+
+#pausa-botao, 
+#continuar-botao {
+    display: none;
+}

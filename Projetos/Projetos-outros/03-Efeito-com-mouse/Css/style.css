@@ -1,0 +1,39 @@
+:root {
+    --cor-branco-01: #fff;
+    --cor-azul-01: #040424;
+    --cor-azul-02: #0d0d81;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--cor-azul-01);
+}
+
+.conteudo {
+    background-color: var(--cor-azul-02);
+    position: relative;
+    height: 80vh;
+}
+
+.titulo {
+    color: var(--cor-branco-01);
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.carro {
+    position: absolute;
+    top: 200px;
+    right: 50px;
+    width: 13rem;
+}
+
+.texto {
+    color: var(--cor-branco-01);
+    margin-top: 10%;
+}

@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+:root {
+    --fonte-texto: 'Caveat', cursive;
+
+    --cor-cinza-claro: #4E6E81;
+    --cor-bage: #F9DBBB;
+    --cor-vermelho: #FF0303;
+    --cor-cinza-escuro: #2E3840;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--cor-cinza-claro);
+}
+
+.titulo {
+    color: var(--cor-bage);
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.titulo p {
+    font-family: var(--fonte-texto);
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 0.4rem;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 10%;
+}
+
+.conteudo a {
+    color: var(--cor-bage);
+    text-decoration: none;
+    font-family: var(--fonte-texto);
+    font-size: 2.6rem;
+    padding: 2rem;
+    border: 2px solid var(--cor-bage);
+    border-radius: 1rem;
+}
+
+.conteudo a:hover {
+    color: var(--cor-cinza-escuro);
+    border: 2px solid var(--cor-vermelho);
+    transition: all 0.8s;
+}
