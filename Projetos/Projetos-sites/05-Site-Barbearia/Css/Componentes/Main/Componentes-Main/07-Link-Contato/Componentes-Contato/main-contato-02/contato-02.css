@@ -1,0 +1,120 @@
+.main__contato_form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.8rem;
+}
+
+.main__contato_campo {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.main__contato_campo_dados {
+    position: relative;
+}
+
+.main__contato_campo_dados_titulo {
+    background-color: var(--cor-06);
+    color: var(--cor-07);
+    text-align: center;
+    font-family: var(--texto-main);
+    font-size: 2.2rem;
+    width: 18rem;
+    padding: 0.5rem 0;
+    border-radius: 2rem;
+}
+
+.contato__campo_dados_input, 
+.contato__campo_dados_textarea {
+    background-color: var(--cor-07);
+    color: var(--cor-01);
+    outline: none;
+    font-family: var(--texto-main);
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 0.2rem 0;
+    border: none;
+    border-bottom: solid 2px var(--cor-01);
+}
+
+.contato__campo_dados_input::placeholder, 
+.contato__campo_dados_textarea::placeholder {
+    color: var(--cor-01);
+    padding: 0 0.2rem;
+}
+
+.main__contato_campo_dados input::-webkit-outher-spin-button,
+.main__contato_campo_dados input::-webkit-inner-spin-button  {
+    appearance: none;
+}
+
+.main__contato_campo_dados.certo .contato__campo_dados_input {
+    border-bottom: 2px solid var(--cor-certo);
+}
+
+.main__contato_campo_dados.errado .contato__campo_dados_input {
+    border-bottom: 2px solid var(--cor-errado);
+}
+
+.main__contato_campo_dados i {
+    visibility: hidden;
+    position: absolute;
+    right: 0.8rem;
+    bottom: 0.6rem;
+}
+
+.main__contato_campo_dados .fa-circle-check {
+    color: var(--cor-certo);
+}
+
+.main__contato_campo_dados .fa-circle-exclamation {
+    color: var(--cor-errado);
+}
+
+.main__contato_campo_dados.certo i.fa-circle-check {
+    visibility: visible;
+}
+
+.main__contato_campo_dados.errado i.fa-circle-exclamation {
+    visibility: visible;
+}
+
+.main__contato_campo_dados small {
+    visibility: hidden;
+    position: absolute;
+    top: 1.9rem;
+    left: 0.2rem;
+    font-family: var(--texto-main);
+    font-size: 0.8rem;
+}
+
+.main__contato_campo_dados.errado small {
+    color: var(--cor-errado);
+    visibility: visible;
+}
+
+.contato__campo_dados_textarea {
+    height: 20vh;
+}
+
+.contato__campo_botao {
+    background-color: var(--cor-07);
+    color: var(--cor-01);
+    cursor: pointer;
+    font-family: var(--texto-main);
+    font-size: 1.6rem;
+    width: 60%;
+    padding: 0.8rem;
+    margin-left: 20%;
+    border: solid 4px var(--cor-05);
+    border-radius: 2rem;
+    transition: all 0.8s;
+}
+
+.contato__campo_botao:hover {
+    background-color: var(--cor-01);
+    color: var(--cor-07);
+    border: solid 4px var(--cor-06);
+}

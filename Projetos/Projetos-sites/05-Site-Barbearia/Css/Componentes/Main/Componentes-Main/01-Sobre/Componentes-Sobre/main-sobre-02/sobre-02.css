@@ -1,0 +1,9 @@
+.main__sobre_texto {
+    color: var(--cor-07);
+    font-family: var(--texto-main);
+    font-size: 1.2rem;
+}
+
+.main__sobre_img_fundo {
+    width: 400px;
+}

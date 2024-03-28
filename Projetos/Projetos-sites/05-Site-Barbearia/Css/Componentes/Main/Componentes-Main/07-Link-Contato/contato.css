@@ -1,0 +1,142 @@
+@import url(./Componentes-Contato/main-contato-01/contato-01.css);
+@import url(./Componentes-Contato/main-contato-02/contato-02.css);
+
+.main__contato_fixos {
+    background-color: var(--cor-01);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    width: 70%;
+    margin: 3rem auto;
+    padding: 1rem;
+    border: solid 3px var(--cor-05);
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.main__contato {
+    background-color: var(--cor-07);
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: 0 auto;
+    padding: 1.6rem;
+    border: solid 3px var(--cor-06);
+    border-radius: 0.4rem;
+}
+
+@media(max-width: 1080px) {
+    .main__contato_fixos {
+        gap: 1.5rem;
+        width: 80%;
+        border-top-right-radius: 0.8rem;
+        border-bottom-right-radius: 0.8rem;
+    }
+    .main__contato_fixos div {
+        gap: 0.3rem;
+    }
+    .main__contato_fixos div i {
+        font-size: 1.4rem;
+    }
+    .main__contato_fixos div p {
+        font-size: 1.2rem;
+    }
+    .main__contato {
+        width: 80%;
+    }
+    .main__contato_form {
+        gap: 1rem;
+    }
+    .main__contato_campo {
+        gap: 1.5rem;
+    }
+    .main__contato_campo_dados_titulo {
+        font-size: 1.8rem;
+        width: 15rem;
+        padding: 0.6rem 0;
+    }
+    .contato__campo_dados_input, 
+    .contato__campo_dados_textarea {
+        font-size: 1.3rem;
+    }
+    .main__contato_campo_dados small {
+        top: 2.1rem;
+        font-size: 0.7rem;
+    }
+    .contato__campo_dados_textarea {
+        height: 16vh;
+    }
+    .contato__campo_botao {
+        font-size: 1.4rem;
+        border: solid 3px var(--cor-05);
+    }
+    .contato__campo_botao:hover {
+        border: solid 3px var(--cor-06);
+    }
+}
+
+@media(max-width: 740px) {
+    .main__contato_fixos {
+        flex-direction: column;
+        width: 60%;
+        border-top-right-radius: 0.6rem;
+        border-bottom-right-radius: 0.6rem;
+    }
+    .main__contato_fixos div i {
+        font-size: 1.3rem;
+    }
+    .main__contato_fixos div p {
+        font-size: 1.1rem;
+    }
+    .main__contato_campo {
+        gap: 1.3rem;
+    }
+    .main__contato_campo_dados_titulo {
+        font-size: 1.6rem;
+        width: 14rem;
+    }
+    .contato__campo_dados_input, 
+    .contato__campo_dados_textarea {
+        font-size: 1.2rem;
+    }
+    .main__contato_campo_dados small {
+        top: 2rem;
+    }
+    .contato__campo_dados_textarea {
+        height: 14vh;
+    }
+}
+
+@media(max-width: 520px) {
+    .main__contato_fixos {
+        width: 100%;
+        margin: 1rem auto;
+        border: none;
+        border-radius: 0;
+    }
+    .main__contato_campo {
+        gap: 1.3rem;
+    }
+    .main__contato_campo_dados_titulo {
+        font-size: 1.4rem;
+        width: 12rem;
+    }
+    .contato__campo_dados_input, 
+    .contato__campo_dados_textarea {
+        font-size: 1.1rem;
+    }
+    .main__contato_campo_dados small {
+        top: 1.8rem;
+        font-size: 0.6rem;
+    }
+    .contato__campo_botao {
+        font-size: 1.2rem;
+        width: 80%;
+        margin-left: 10%;
+        border: solid 2px var(--cor-05);
+    }
+    .contato__campo_botao:hover {
+        border: solid 2px var(--cor-06);
+    }
+}

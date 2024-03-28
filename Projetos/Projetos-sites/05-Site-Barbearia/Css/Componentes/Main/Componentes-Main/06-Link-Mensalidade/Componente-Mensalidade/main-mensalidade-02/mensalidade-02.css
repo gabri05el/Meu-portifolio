@@ -1,0 +1,82 @@
+.main__mensalidade_componente_bronze, 
+.main__mensalidade_componente_prata, 
+.main__mensalidade_componente_ouro {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.4rem;
+}
+
+.main_mensalidade_bronze, 
+.main_mensalidade_prata, 
+.main_mensalidade_ouro {
+    color: var(--cor-02);
+    font-family: var(--texto-main);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    width: 21rem;
+    padding: 1.8rem;
+    border-radius: 0.8rem;
+    transition: all 1s;
+}
+
+.main_mensalidade_bronze {
+    background: var(--cor-fundo-mensalidade-bronze);
+    border: solid 3px var(--cor-bronze);
+}
+.main_mensalidade_bronze:hover {
+    background: var(--cor-fundo-mensalidade-bronze-hover);
+}
+
+.main_mensalidade_prata {
+    background: var(--cor-fundo-mensalidade-prata);
+    border: solid 3px var(--cor-prata);
+}
+.main_mensalidade_prata:hover {
+    background: var(--cor-fundo-mensalidade-prata-hover);
+}
+
+.main_mensalidade_ouro {
+    background: var(--cor-fundo-mensalidade-ouro);
+    border: solid 3px var(--cor-ouro);
+}
+.main_mensalidade_ouro:hover {
+    background: var(--cor-fundo-mensalidade-ouro-hover);
+}
+
+.main_mensalidade_bronze:hover, 
+.main_mensalidade_prata:hover, 
+.main_mensalidade_ouro:hover {
+    scale: 1.1;
+}
+
+.main_mensalidade_bronze:hover:active, 
+.main_mensalidade_prata:hover:active, 
+.main_mensalidade_ouro:hover:active {
+    border: solid 3px var(--cor-07);
+}
+
+.main_mensalidade_bronze h3, 
+.main_mensalidade_prata h3, 
+.main_mensalidade_ouro h3 {
+    font-size: 1.6rem;
+}
+
+.main_mensalidade_bronze p, 
+.main_mensalidade_prata p, 
+.main_mensalidade_ouro p {
+    font-size: 1.2rem;
+}
+
+.main_mensalidade_bronze h4, 
+.main_mensalidade_prata h4, 
+.main_mensalidade_ouro h4 {
+    background-color: var(--cor-07);
+    font-size: 1.3rem;
+    padding: 1rem;
+    border-radius: 50%;
+}

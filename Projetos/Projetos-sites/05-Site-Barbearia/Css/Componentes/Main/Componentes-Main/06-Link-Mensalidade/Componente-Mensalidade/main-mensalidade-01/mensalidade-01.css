@@ -1,0 +1,16 @@
+.main__mensalidade_componente {
+    background-color: var(--cor-03);
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    width: 90%;
+    padding: 2rem 1rem;
+    border: solid 4px var(--cor-06);
+    border-radius: 1.2rem;
+}
+
+.main__mensalidade_titulo {
+    color: var(--cor-07);
+    font-family: var(--texto-main);
+    font-size: 1.8rem;
+}
