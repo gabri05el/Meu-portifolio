@@ -1,0 +1,13 @@
+.barras {
+    cursor: pointer;
+    display: none;
+}
+
+.barra {
+    background-color: var(--cor-04);
+    display: block;
+    width: 2rem;
+    height: 0.2rem;
+    margin: 0.4rem 2rem 0.4rem 0;
+    border-radius: 0.2rem;
+}

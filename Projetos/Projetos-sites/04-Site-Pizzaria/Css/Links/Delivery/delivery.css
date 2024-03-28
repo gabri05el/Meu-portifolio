@@ -1,0 +1,60 @@
+@import url(./Componentes/Campo-Img/tamanho__imagens.css);
+
+.delivery {
+    background-color: var(--cor-03);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    padding: 4rem;
+}
+
+.delivery__campo_agua, 
+.delivery__campo_coca_cola, 
+.delivery__campo_fanta, 
+.delivery__campo_guarana, 
+.delivery__campo_pepsi, 
+.delivery__campo_sprite, 
+.delivery__campo_suco_natural, 
+.delivery__campo_vinho,
+.delivery__campo_pizza {
+    display: flex;
+    align-items: end;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+    border-bottom: 2px solid var(--cor-04);
+}
+
+.delivery__campo {
+    background-color: var(--cor-04);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 2rem;
+    transition: all 0.8s;
+}
+
+.delivery__campo:hover {
+    opacity: 0.5;
+}
+
+.delivery__campo_nome {
+    color: var(--cor-01);
+    white-space: nowrap;
+    font-family: var(--texto-delivery);
+    font-size: 1.6rem;
+}
+
+.delivery__campo_valor {
+    color: var(--cor-01);
+    white-space: nowrap;
+    font-family: var(--texto-delivery);
+    font-size: 1.3rem;
+}
+
+.delivery__campo.escolhido {
+    background-color: var(--cor-02);
+}
