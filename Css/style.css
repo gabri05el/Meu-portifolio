@@ -1,0 +1,43 @@
+@import url(./Componentes/Header/header.css);
+@import url(./Componentes/Main/main.css);
+@import url(./Componentes/Footer/footer.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+:root {
+    --cor-de-fundo-01: #0C134F;
+    --cor-de-fundo-02: #1D267D;
+    --cor-fonte-01: #5C469C;
+    --cor-fonte-02: #D4ADFC;
+
+    --transicao-04s: all 0.4s;
+    --transicao-06s: all 0.6s;
+    --transicao-08s: all 0.8s;
+
+    --cor-forte-fraca-gradient: linear-gradient(var(--cor-de-fundo-01) 40%, var(--cor-de-fundo-02));
+    --cor-fraca-forte-gradient: linear-gradient(var(--cor-de-fundo-02) 40%, var(--cor-de-fundo-01));
+
+    --fonte-header: 'Quicksand', sans-serif;
+    --fonte-main: 'Lato', sans-serif;
+    --fonte-footer: 'Montserrat', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--cor-de-fundo-01);
+    max-width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.removido {
+    display: none;
+}
