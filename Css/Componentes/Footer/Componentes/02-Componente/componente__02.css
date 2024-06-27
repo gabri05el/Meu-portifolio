@@ -40,6 +40,6 @@
 
 .footer__contato_link_a:hover {
     color: var(--cor-fonte-01);
-    border-right: none;
-    border-bottom: none;
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid transparent;
 }
