@@ -1,0 +1,60 @@
+.main__localidade_titulo {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.main__localidade_titulo_h2 {
+    color: var(--cor-04);
+    white-space: nowrap;
+    font-family: var(--texto-main);
+    font-size: 2.2rem;
+    letter-spacing: 0.3rem;
+}
+
+.main__localidades {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    margin: 2rem auto;
+}
+
+.main__localidade {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 40%;
+    margin: 0 2rem;
+}
+
+.main__localidade_img_unidade {
+    width: 100%;
+    border-radius: 1.6rem;
+    transition: all 0.6s;
+}
+
+.main__localidade_img_unidade:hover {
+    scale: 0.9;
+    opacity: 0.9;
+}
+
+.main__localidade_subtitulo {
+    color: var(--cor-02);
+    white-space: nowrap;
+    text-decoration: none;
+    font-family: var(--texto-main);
+    font-size: 2rem;
+    width: 30%;
+    transition: all 0.4s;
+}
+
+.main__localidade_subtitulo:hover {
+    color: var(--cor-04);
+}
+
+.main__localidade_texto {
+    color: var(--cor-04);
+    font-family: var(--texto-main);
+    font-size: 1.4rem;
+}

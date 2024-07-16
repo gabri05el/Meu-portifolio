@@ -1,0 +1,81 @@
+@import url(./componentes/header.css);
+@import url(./componentes/section-dowload.css);
+@import url(./componentes/main.css);
+@import url(./componentes/section-services.css);
+@import url(./componentes/diplomas-e-experiencia.css);
+@import url(./componentes/habilidades-e-curiosidades.css);
+
+@import url(./componentes/responsividade.css);
+
+@import url('https://fonts.googleapis.com/css2?family= IBM+Plex+Mono & display =swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+:root {
+    --cor-linear-gradient: linear-gradient(#0000ff 20%, #00008b);
+    --cor-branco: #ffffff;
+    --cor-preto: #222;
+    --cor-cinza-01: #808080;
+    --cor-cinza-02: #a9a9a9;
+    --cor-azul-01: #0000ff;
+    --cor-azul-02: #0026ff;
+    --cor-azul-03: #00008b;
+    --cor-ciano-01: #008b8b;
+    --cor-aqua-01: #00ffff;
+    --cor-aqua-02: #7fffd4;
+
+    --fonte-principal: 'IBM Plex Mono', monospace;
+    --fonte-dos-titulos: 'Dancing Script', cursive;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--cor-azul-01);
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+@keyframes pisca {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+@keyframes inicializar {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -3.75rem, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes sobreSecao {
+    from {
+        transition: 0.5s;
+        transform: translate3d(3.75rem, 0, 0);
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+@keyframes ladoSecao {
+    from {
+        transition: 0.5s;
+        transform: translate3d(-3.75rem, 0, 0);
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+

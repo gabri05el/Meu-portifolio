@@ -1,0 +1,28 @@
+.footer__opcoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.footer__botao {
+    background-color: var(--cor-03);
+    color: var(--cor-01);
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: var(--texto-footer);
+    font-size: 1.6rem;
+    width: 100%;
+    padding: 2rem;
+    border: 2px solid var(--cor-04);
+    border-radius: 1.2rem;
+    transition: all 0.8s;
+}
+
+.footer__botao:hover {
+    color: var(--cor-04);
+    border: 2px solid var(--cor-01);
+}

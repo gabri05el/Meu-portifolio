@@ -1,0 +1,43 @@
+.section-div {
+    background-color: var(--cor-azul-01);
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.75rem;
+    padding: 3.75rem;
+    animation: inicializar 0.7s forwards;
+}
+
+.section-div div {
+    display: grid;
+    align-self: start;
+    gap: 1.875rem;
+    margin-top: 7.5rem;
+}
+
+.section-div div h2, 
+.section-div div p {
+    color: var(--cor-cinza-01);
+    font-family: var(--fonte-principal);
+}
+
+.section-div div a {
+    color: var(--cor-branco);
+    justify-self: start;
+    font-family: var(--fonte-principal);
+    border: 2px solid var(--cor-branco);
+    border-radius: 0.3rem;
+    padding: 0.9rem 2.5rem;
+}
+
+.section-div img {
+    max-width: 100%;
+}
+
+.digitando::after {
+    content: '|';
+    margin-left: 0.3rem;
+    opacity: 1;
+    animation: pisca 0.5s infinite;
+}

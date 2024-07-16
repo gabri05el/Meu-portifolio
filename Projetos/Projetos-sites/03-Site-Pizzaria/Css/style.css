@@ -1,0 +1,43 @@
+@import url(./Links/Delivery/delivery.css);
+@import url(./Links/Formulario/formulario.css);
+@import url(./Links/Contato/contato.css);
+
+@import url(./Componentes/Header/header.css);
+@import url(./Componentes/Main/main.css);
+@import url(./Componentes/Footer/footer.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalnia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+
+:root {
+    --cor-01: #ED7D31;
+    --cor-02: #6C5F5B;
+    --cor-03: #4F4A45;
+    --cor-04: #F6F1EE;
+
+    --cor-formulario-01: #0af00a;
+    --cor-formulario-02: #ff0000;
+
+    --texto-header: 'Edu TAS Beginner', cursive;
+    --texto-main: 'Ephesis', cursive;
+    --texto-footer: 'Dancing Script', cursive;
+
+    --texto-formulario: 'Pacifico', cursive;
+    --texto-delivery: 'Kalnia', serif;
+    --texto-contato: 'Sevillana', cursive;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--cor-01);
+}

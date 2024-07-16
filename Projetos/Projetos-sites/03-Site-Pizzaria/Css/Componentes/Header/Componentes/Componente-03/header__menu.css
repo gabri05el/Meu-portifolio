@@ -1,0 +1,17 @@
+.header__menu {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+.header__menu_texto {
+    color: var(--cor-04);
+    text-decoration: none;
+    font-family: var(--texto-header);
+    font-size: 1.6rem;
+    transition: all 0.2s;
+}
+
+.header__menu_texto:hover {
+    border-top: 2px solid var(--cor-04);
+}

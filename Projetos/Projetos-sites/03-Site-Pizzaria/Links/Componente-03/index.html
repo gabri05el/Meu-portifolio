@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reserva</title>
+        <link rel="shortcut icon" href="../../Icons/Icon-Reserva/reserva.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="../../Css/style.css">
+        <script defer src="../../Js/Formulario/formulario.Js"></script>
+        <script defer src="../../Js/script.Js"></script>
+    </head>
+    <body>
+        <header>
+            <section class="header">
+                <div class="header__logo">
+                    <img src="../../Imagens/Logo/01-logo-pizza.png" alt="Imagem do Logo" class="logo__header">
+                </div>
+                <div id="menu" class="header__menu">
+                    <a href="../../index.html" class="header__menu_texto">Menu</a>
+                    <a href="../Componente-01/index.html" class="header__menu_texto">Pizzaria</a>
+                    <a href="../Componente-02/index.html" class="header__menu_texto">Delivery</a>
+                    <a href="../Componente-04/index.html" class="header__menu_texto">Locaidades</a>
+                    <a href="../Componente-05/index.html" class="header__menu_texto">Contatos</a>
+                </div>
+                <div id="barras" class="barras">
+                    <span class="barra"></span>
+                    <span class="barra"></span>
+                    <span class="barra"></span>
+                </div>
+            </section>
+        </header>
+        <main>
+            <section class="main">
+                <form class="formulario" id="formulario">
+                    <div class="formulario__campo">
+                        <div class="formulario__campo_dados">
+                            <h2 class="formulario__campo_dados_titulo">Dados Pessoais</h2>
+                        </div>
+                        <div class="formulario__campo_dados">
+                            <label for="Nome" class="formulario__campo_dados_label">Nome</label>
+                            <input type="text" name="Nome" id="formulario--dados-nome" class="formulario__campo_dados_input" placeholder="Nome Completo">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            <small></small>
+                        </div>
+                        <div class="formulario__campo_dados">
+                            <label for="cpf" class="formulario__campo_dados_label">Cpf</label>
+                            <input type="number" name="cpf" id="formulario--dados-cpf" class="formulario__campo_dados_input">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            <small></small>
+                        </div>
+                        <div class="formulario__campo_dados">
+                            <label for="telefone" class="formulario__campo_dados_label">Telefone</label>
+                            <input type="number" name="telefone" id="formulario--dados-telefone" class="formulario__campo_dados_input" placeholder="(XX) XXXXX-XXXX">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            <small></small>
+                        </div>
+                        <div class="formulario__campo_dados">
+                            <label for="email" class="formulario__campo_dados_label">E-mail</label>
+                            <input type="email" name="email" id="formulario--dados-email" class="formulario__campo_dados_input" placeholder="xxxx@xxxx.com">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            <small></small>
+                        </div>
+                    </div>
+                    <div class="formulario__campo">
+                        <div class="formulario__campo_dados">
+                            <h2 class="formulario__campo_dados_titulo">Dados Para Reserva</h2>
+                        </div>
+                        <div class="formulario__campo_dados">
+                            <label for="unidade" class="formulario__campo_dados_label">Unidade</label>
+                            <select name="unidade" id="formulario--dados-unidade" class="formulario__campo_dados_select">
+                                <option value="UnidadeX">Unidade X</option>
+                                <option value="UnidadeY">Unidade Y</option>
+                            </select>
+                        </div>
+                        <div class="formulario__campo_dados">
+                            <label for="horario" class="formulario__campo_dados_label">Horario da reserva</label>
+                            <select name="horario-da-reserva" class="formulario__campo_dados_select">
+                                <option>17:00</option>
+                                <option>17:30</option>
+                                <option>18:00</option>
+                                <option>18:30</option>
+                                <option>19:00</option>
+                                <option>19:30</option>
+                                <option>20:00</option>
+                                <option>20:30</option>
+                                <option>21:00</option>
+                                <option>21:30</option>
+                                <option>22:00</option>
+                                <option>22:30</option>
+                                <option>23:00</option>
+                                <option>23:30</option>
+                                <option>00:00</option>
+                                <option>00:30</option>
+                            </select>
+                        </div>
+                        <div class="formulario__campo_dados">
+                            <label for="mesa" class="formulario__campo_dados_label">Quantidade De Mesa</label>
+                            <input type="number" name="mesa" id="formulario--dados-mesa" class="formulario__campo_dados_input" placeholder="1 Mesa é igual á 4 pessoas">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            <small></small>
+                        </div>
+                        <div class="formulario__campo_dados">
+                            <label for="local-mesa" class="formulario__campo_dados_label">Local da mesa</label>
+                            <select name="local-mesa" class="formulario__campo_dados_select">
+                                <option value="local1">Centro (lado de dentro)</option>
+                                <option value="local2">Canto (lado de dentro)</option>
+                                <option value="local3">Lado de Fora (Centro)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="formulario__campo">
+                        <input type="submit" value="Enviar" class="formulario__campo_botao">
+                    </div>
+                </form>
+                <div class="main__reserva">
+                    <img src="../../Imagens/img-reserva/img-de-fundo.avif" alt="Imagem de fundo com talheres da Pizzaria" class="main__reserva_img_fundo">
+                    <div class="main__reseva_texto">
+                        <p class="main__reseva_texto_p">Faça Sua Reserva</p>
+                        <div class="main__reseva_texto_botoes">
+                            <a href="../Componente-08/index.html" class="main__reseva_texto_botao">Unidade X</a>
+                            <a href="../Componente-09/index.html" class="main__reseva_texto_botao">Unidade Y</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <section class="footer">
+                <div class="footer__contato">
+                    <div>
+                        <img src="../../Imagens/Logo/01-logo-pizza.png" alt="Imagem da Logo" class="logo__footer">
+                    </div>
+                    <div class="footer__div_contatos">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                </div>
+                <div class="footer__localidade">
+                    <div>
+                        <p class="footer__endereco"><i class="fa-solid fa-house"></i>R.XXXXXX, NºX</p>
+                        <p class="footer__telefone"><i class="fa-solid fa-phone"></i>(XX) XXXXX-XXXX</p>
+                        <p class="footer__email"><i class="fa-solid fa-envelope"></i>XXXXXX@XXXXX.com</p>
+                    </div>
+                    <div>
+                        <h2>Horarios de Funcionamento</h2>
+                        <p><i class="fa-regular fa-clock"></i> Dás 17:30 ás 01:00</p>
+                    </div>
+                </div>
+                <div class="footer__opcoes">
+                    <a href="../Componente-02/index.html" class="footer__botao">Delivery</a>
+                </div>
+            </section>
+        </footer>
+    </body>
+</html>

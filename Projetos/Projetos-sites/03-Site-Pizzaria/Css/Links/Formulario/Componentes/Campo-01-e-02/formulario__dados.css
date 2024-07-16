@@ -1,0 +1,101 @@
+.formulario__campo_dados {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario__campo_dados_titulo {
+    color: var(--cor-04);
+    white-space: nowrap;
+    font-family: var(--texto-formulario);
+    font-size: 2rem;
+    letter-spacing: 0.4rem;
+}
+
+.formulario__campo_dados_label {
+    color: var(--cor-01);
+    font-family: var(--texto-formulario);
+    font-size: 1.6rem;
+    margin: 0.5rem;
+}
+
+.formulario__campo_dados input::-webkit-outher-spin-button,
+.formulario__campo_dados input::-webkit-inner-spin-button  {
+    appearance: none;
+}
+
+.formulario__campo_dados_input {
+    background-color: var(--cor-03);
+    color: var(--cor-04);
+    outline: none;
+    font-family: var(--texto-formulario);
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+    width: 100%;
+    padding: 0.8rem 0.6rem;
+    border: 2px solid var(--cor-04);
+    border-radius: 1rem;
+}
+
+.formulario__campo_dados.certo .formulario__campo_dados_input {
+    border: 2px solid var(--cor-formulario-01);
+}
+
+.formulario__campo_dados.errado .formulario__campo_dados_input {
+    border: 2px solid var(--cor-formulario-02);
+}
+
+.formulario__campo_dados_input::placeholder {
+    color: var(--cor-04);
+}
+
+.formulario__campo_dados_select {
+    background-color: var(--cor-03);
+    color: var(--cor-04);
+    outline: none;
+    font-family: var(--texto-formulario);
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+    width: 100%;
+    padding: 0.8rem 0.6rem;
+    border: 2px solid var(--cor-04);
+    border-radius: 1rem;
+}
+
+.formulario__campo_dados i {
+    visibility: hidden;
+    position: absolute;
+    font-size: 1.3rem;
+    bottom: 1.2rem;
+    right: 1rem;
+}
+
+.formulario__campo_dados .fa-circle-check {
+    color: var(--cor-formulario-01);
+}
+
+.formulario__campo_dados .fa-circle-exclamation {
+    color: var(--cor-formulario-02);
+}
+
+.formulario__campo_dados.certo i.fa-circle-check {
+    visibility: visible;
+}
+
+.formulario__campo_dados.errado i.fa-circle-exclamation {
+    visibility: visible;
+}
+
+.formulario__campo_dados small {
+    visibility: hidden;
+    position: absolute;
+    font-family: var(--texto-formulario);
+    font-size: 1.2rem;
+    top: 7.5rem;
+    left: 1rem;
+}
+
+.formulario__campo_dados.errado small {
+    color: var(--cor-formulario-02);
+    visibility: visible;
+}
