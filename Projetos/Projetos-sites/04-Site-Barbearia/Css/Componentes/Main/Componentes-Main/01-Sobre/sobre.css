@@ -1,0 +1,62 @@
+@import url(./Componentes-Sobre/main-sobre-01/sobre-01.css);
+@import url(./Componentes-Sobre/main-sobre-02/sobre-02.css);
+
+.main__sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    gap: 2rem;
+    margin: 0 auto;
+}
+
+.main__sobre_componente {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+@media(max-width: 1080px) {
+    .main__sobre {
+        width: 90%;
+    }
+    .main__sobre_titulo {
+        font-size: 1.6rem;
+    }
+    .main__sobre_texto {
+        font-size: 1rem;
+    }
+    .main__sobre_img_fundo {
+        width: 300px;
+    }
+}
+
+@media(max-width: 740px) {
+    .main__sobre {
+        width: 80%;
+    }
+    .main__sobre_titulo {
+        font-size: 1.4rem;
+    }
+    .main__sobre_texto {
+        font-size: 0.8rem;
+    }
+    .main__sobre_img_fundo {
+        width: 200px;
+    }
+}
+
+@media(max-width: 520px) {
+    .main__sobre {
+        width: 80%;
+    }
+    .main__sobre_componente {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .main__sobre_titulo {
+        font-size: 1.2rem;
+    }
+}

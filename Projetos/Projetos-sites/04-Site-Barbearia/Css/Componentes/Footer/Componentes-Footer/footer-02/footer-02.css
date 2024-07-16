@@ -1,0 +1,29 @@
+
+.footer__componente_redes_sociais {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    gap: 1rem;
+}
+
+.footer__componente_redes_sociais i {
+    color: var(--cor-05);
+    font-size: 1.9rem;
+    transition: all 0.8s;
+}
+
+.footer__componente_redes_sociais i:hover {
+    color: var(--cor-06);
+}
+
+.footer__componente_redes_sociais p {
+    color: var(--cor-06);
+    font-family: var(--texto-footer);
+    font-size: 1.7rem;
+    transition: all 0.5s;
+}
+
+.footer__componente_redes_sociais p:hover {
+    color: var(--cor-05);
+    text-decoration: underline;
+}

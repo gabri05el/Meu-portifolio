@@ -1,0 +1,5 @@
+.main__agenda_componente {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}

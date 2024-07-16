@@ -1,0 +1,14 @@
+.div_barras {
+    cursor: pointer;
+    display: none;    
+}
+
+.barra {
+    background-color: var(--cor-07);
+    display: block;
+    width: 1.7rem;
+    height: 0.2rem;
+    margin: 0.3rem 0.1rem;
+    border-radius: 0.1rem;
+    transition: all 0.3s ease-in-out;
+}

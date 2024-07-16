@@ -1,0 +1,50 @@
+.main__localidade_componente {
+    background-color: var(--cor-07);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 1rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+.main__localidade_componente::before,
+.main__localidade_componente::after {
+    width: 0px;
+    height: 0px;
+    transition: 0.6s ease-in-out;
+    content: '';
+}
+
+.main__localidade_componente::before {
+    position: absolute;
+    top: -0.8rem;
+    right: -0.8rem;
+    border-top: 1rem solid transparent;
+    border-right: 1rem solid transparent;
+}
+
+.main__localidade_componente::after {
+    position: absolute;
+    bottom: -0.8rem;
+    left: -0.8rem;
+    border-bottom: 3px solid transparent;
+    border-left: 3px solid transparent;
+}
+
+.main__localidade_componente:hover::before, 
+.main__localidade_componente:hover::after {
+    width: 100%;
+    height: 100%;
+}
+
+.main__localidade_componente:hover::before {
+    border-top: 3px solid var(--cor-06);
+    border-right: 3px solid var(--cor-06);
+}
+
+.main__localidade_componente:hover::after {
+    border-bottom: 3px solid var(--cor-06);
+    border-left: 3px solid var(--cor-06);
+}

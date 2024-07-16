@@ -1,0 +1,21 @@
+.main__agendar_fixos div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.main__agendar_fixos div i {
+    background-color: var(--cor-03);
+    color: var(--cor-06);
+    font-size: 1.8rem;
+    padding: 0.6rem;
+    border-radius: 50%;
+}
+
+.main__agendar_fixos div p {
+    color: var(--cor-05);
+    white-space: nowrap;
+    font-family: var(--texto-main);
+    font-size: 1.6rem;
+}

@@ -1,0 +1,116 @@
+@import url(./Componente-Localidade/main-localidade-01/localidade-01.css);
+@import url(./Componente-Localidade/main-localidade-02/localidade-02.css);
+
+.main__localidade {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 3rem;
+    margin: 0 auto;
+}
+
+@media(max-width: 1080px) {
+    .main__localidade {
+        width: 95%;
+        gap: 2rem;
+    }
+    .main__localidade_componente {
+        width: 45%;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+    .main__localidade_contato h2 {
+        font-size: 1.5rem;
+    }
+    .main__localidade_contato_div p {
+        font-size: 1rem;
+    }
+    .main__localidade_contato_div p i {
+        font-size: 1.2rem;
+    }
+    .main__localidade_informacoes_div h4 {
+        font-size: 1.1rem;
+    }
+    .main__localidade_informacoes_div p {
+        font-size: 1rem;
+    }
+    .main__localidade_informacoes_div p i {
+        font-size: 1.2rem;
+    }
+}
+
+@media(max-width: 740px) {
+    .main__localidade {
+        width: 100%;
+        gap: 1.8rem;
+    }
+    .main__localidade_componente {
+        width: 46%;
+        padding: 0.5rem;
+        border-radius: 0.8rem;
+    }
+    .main__localidade_componente::before {
+        top: -0.5rem;
+        right: -0.5rem;
+    }
+    .main__localidade_componente::after {
+        bottom: -0.5rem;
+        left: -0.5rem;
+    }
+    .main__localidade_contato h2 {
+        font-size: 1.3rem;
+    }
+    .main__localidade_contato_div p {
+        font-size: 0.8rem;
+    }
+    .main__localidade_contato_div p i {
+        font-size: 1rem;
+    }
+    .main__localidade_informacoes_div h4 {
+        font-size: 1rem;
+    }
+    .main__localidade_informacoes_div p {
+        font-size: 0.9rem;
+    }
+    .main__localidade_informacoes_div p i {
+        font-size: 1.1rem;
+    }
+}
+
+@media(max-width: 520px) {
+    .main__localidade {
+        width: 100%;
+        gap: 1.5rem;
+    }
+    .main__localidade_componente {
+        width: 70%;
+    }
+    .main__localidade_componente::before {
+        top: -0.6rem;
+        right: -0.6rem;
+    }
+    .main__localidade_componente::after {
+        bottom: -0.6rem;
+        left: -0.6rem;
+    }
+    .main__localidade_contato h2 {
+        font-size: 1.5rem;
+    }
+    .main__localidade_contato_div p {
+        font-size: 1rem;
+    }
+    .main__localidade_contato_div p i {
+        font-size: 1.2rem;
+    }
+    .main__localidade_informacoes_div h4 {
+        font-size: 1.2rem;
+    }
+    .main__localidade_informacoes_div p {
+        font-size: 1.1rem;
+    }
+    .main__localidade_informacoes_div p i {
+        font-size: 1.2rem;
+    }
+}

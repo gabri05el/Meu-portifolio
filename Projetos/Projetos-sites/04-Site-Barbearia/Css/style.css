@@ -1,0 +1,43 @@
+@import url(./Componentes/Header/header.css);
+@import url(./Componentes/Main/main.css);
+@import url(./Componentes/Footer/footer.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap');
+:root {
+    --cor-01: #404258;
+    --cor-02: #474E68;
+    --cor-03: #50577A;
+    --cor-04: #6B728E;
+    --cor-05: #F6B17A;
+    --cor-06: #FFFD8C;
+    --cor-07: #BFCFE7;
+
+    --cor-fundo-main: linear-gradient(#6B728E, #474E68);
+
+    --cor-bronze: #d47508;
+    --cor-prata: #5a6e8d;
+    --cor-ouro: #f1e20f;
+
+    --cor-fundo-mensalidade-bronze: linear-gradient(120deg, #e9784b, #a76510 80%);
+    --cor-fundo-mensalidade-prata: linear-gradient(120deg, #e0e2e7, #6276a0 80%);
+    --cor-fundo-mensalidade-ouro: linear-gradient(120deg, #eecc09, #bafa0b 80%);
+
+    --cor-fundo-mensalidade-bronze-hover: linear-gradient(320deg, #e9784b, #a76510 40%);
+    --cor-fundo-mensalidade-prata-hover: linear-gradient(320deg, #e0e2e7, #6276a0 40%);
+    --cor-fundo-mensalidade-ouro-hover: linear-gradient(320deg, #eecc09, #bafa0b 40%);
+
+    --cor-certo: #06f106;
+    --cor-errado: #fa1007;
+
+    --texto-header: 'Rubik Doodle Shadow', system-ui;
+    --texto-main: 'Rubik Mono One', monospace;
+    --texto-footer: 'Rubik Scribble', system-ui;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}

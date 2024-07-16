@@ -1,0 +1,20 @@
+.main__corte_componente {
+    background-color: var(--cor-01);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 28%;
+    height: 70vh;
+    gap: 1rem;
+    padding: 2rem;
+    border: solid 3px var(--cor-05);
+    border-radius: 1.4rem;
+    transition: all 0.7s;
+}
+
+.main__corte_componente:hover {
+    background-color: var(--cor-03);
+    border: solid 3px var(--cor-06);
+    scale: 1.1;
+}

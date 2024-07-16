@@ -1,0 +1,122 @@
+@import url(./Componente-Agendar/main-agendar-01/agendar-01.css);
+@import url(./Componente-Agendar/main-agendar-02/agendar-02.css);
+
+.main__agendar {
+    background-color: var(--cor-07);
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: 0 auto;
+    padding: 1.6rem;
+    border: solid 3px var(--cor-06);
+    border-radius: 0.4rem;
+}
+
+@media(max-width: 1080px) {
+    .main__agendar_fixos {
+        gap: 1.5rem;
+        width: 80%;
+        border-top-right-radius: 0.8rem;
+        border-bottom-right-radius: 0.8rem;
+    }
+    .main__agendar_fixos div {
+        gap: 0.3rem;
+    }
+    .main__agendar_fixos div i {
+        font-size: 1.4rem;
+    }
+    .main__agendar_fixos div p {
+        font-size: 1.2rem;
+    }
+    .main__agendar {
+        width: 80%;
+    }
+    .main__agendar_form {
+        gap: 1rem;
+    }
+    .main__agendar_campo {
+        gap: 1.5rem;
+    }
+    .main__agendar_campo_dados_titulo {
+        font-size: 1.8rem;
+        width: 15rem;
+        padding: 0.6rem 0;
+    }
+    .agendar__campo_dados_input, 
+    .agendar__campo_dados_select {
+        font-size: 1.3rem;
+    }
+    .main__agendar_campo_dados small {
+        top: 2.1rem;
+        font-size: 0.7rem;
+    }
+    .agendar__campo_botao {
+        font-size: 1.4rem;
+        border: solid 3px var(--cor-05);
+    }
+    .agendar__campo_botao:hover {
+        border: solid 3px var(--cor-06);
+    }
+}
+
+@media(max-width: 740px) {
+    .main__agendar_fixos {
+        flex-direction: column;
+        width: 60%;
+        border-top-right-radius: 0.6rem;
+        border-bottom-right-radius: 0.6rem;
+    }
+    .main__agendar_fixos div i {
+        font-size: 1.3rem;
+    }
+    .main__agendar_fixos div p {
+        font-size: 1.1rem;
+    }
+    .main__agendar_campo {
+        gap: 1.3rem;
+    }
+    .main__agendar_campo_dados_titulo {
+        font-size: 1.6rem;
+        width: 14rem;
+    }
+    .agendar__campo_dados_input, 
+    .agendar__campo_dados_select {
+        font-size: 1.2rem;
+    }
+    .main__agendar_campo_dados small {
+        top: 2rem;
+    }
+}
+
+@media(max-width: 520px) {
+    .main__agendar_fixos {
+        width: 100%;
+        margin: 1rem auto;
+        border: none;
+        border-radius: 0;
+    }
+    .main__agendar_campo {
+        gap: 1.3rem;
+    }
+    .main__agendar_campo_dados_titulo {
+        font-size: 1.4rem;
+        width: 12rem;
+    }
+    .agendar__campo_dados_input, 
+    .agendar__campo_dados_select {
+        font-size: 1.1rem;
+    }
+    .main__agendar_campo_dados small {
+        top: 1.8rem;
+        font-size: 0.6rem;
+    }
+    .agendar__campo_botao {
+        font-size: 1.2rem;
+        width: 80%;
+        margin-left: 10%;
+        border: solid 2px var(--cor-05);
+    }
+    .agendar__campo_botao:hover {
+        border: solid 2px var(--cor-06);
+    }
+}

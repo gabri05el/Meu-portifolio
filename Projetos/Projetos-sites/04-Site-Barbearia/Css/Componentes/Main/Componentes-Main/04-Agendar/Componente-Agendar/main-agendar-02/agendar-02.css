@@ -1,0 +1,48 @@
+.main__agenda_componente h2 {
+    color: var(--cor-07);
+    font-family: var(--texto-main);
+    font-size: 1.7rem;
+}
+
+.main__agenda_componente_div {
+    background-color: var(--cor-07);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 1rem;
+    border: solid 3px var(--cor-06);
+    border-radius: 0.8rem;
+}
+
+.main__agenda_componente_div h3 {
+    color: var(--cor-01);
+    font-family: var(--texto-main);
+    font-size: 1.3rem;
+}
+
+.main__agenda_componente_div p {
+    color: var(--cor-02);
+    font-family: var(--texto-main);
+    font-size: 1.1rem;
+}
+
+.main__agenda_componente_div a {
+    background-color: var(--cor-07);
+    color: var(--cor-02);
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--texto-main);
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 1rem;
+    border: solid 3px var(--cor-01);
+    border-radius: 0.5rem;
+    transition: all 0.8s;
+}
+
+.main__agenda_componente_div a:hover {
+    background-color: var(--cor-01);
+    color: var(--cor-06);
+    border: solid 3px var(--cor-05);
+}
