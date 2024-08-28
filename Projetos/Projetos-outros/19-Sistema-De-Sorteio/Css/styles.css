@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+:root {
+    --fonte: 'Roboto Mono', monospace;;
+    --cor-fonte-01: #fff;
+    --cor-fonte-02: #ddc991;
+    --cor-fonte-03: #84a39f;
+
+    --cor-fundo-01: #034912;
+    --cor-fundo-02: #099728;
+    --cor-fundo-03: linear-gradient(#034912, #099728);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: var(--cor-fundo-03);
+    max-width: 100%;
+    height: 100vh;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.main__sorteio .sort__off {
+    display: none;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding: 3rem 2rem;
+}
+
+.header__titulo {
+    color: var(--cor-fonte-02);
+    font-family: var(--fonte);
+    font-size: 2.4rem;
+}
+
+.header__div_links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.header__link {
+    background-color: var(--cor-fundo-02);
+    color: var(--cor-fonte-01);
+    cursor: pointer;
+    font-family: var(--fonte);
+    font-size: 1.2rem;
+    padding: 0.6rem;
+    border: solid 2px var(--cor-fonte-02);
+    border-radius: 0.4rem;
+    transition: all 0.6s;
+}
+
+.header__link:hover {
+    background-color: var(--cor-fundo-01);
+    color: var(--cor-fonte-03);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+.main__sorteio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.main__div_texto {
+    color: var(--cor-fonte-03);
+    font-family: var(--fonte);
+    font-family: 1.2rem;
+}
+
+.main__div_num {
+    color: var(--cor-fonte-02);
+    font-family: var(--fonte);
+    font-size: 2.4rem;
+}
+
+.main__div_botao {
+    background-color: var(--cor-fundo-02);
+    color: var(--cor-fonte-01);
+    cursor: pointer;
+    text-align: center;
+    font-family: var(--fonte);
+    font-size: 1.4rem;
+    padding: 0.6rem;
+    border: solid 3px var(--cor-fonte-02);
+    border-radius: 0.8rem;
+    transition: all 0.8s;
+}
+
+.main__div_botao:hover {
+    background-color: var(--cor-fundo-01);
+    border: solid 3px var(--cor-fonte-03);
+}
