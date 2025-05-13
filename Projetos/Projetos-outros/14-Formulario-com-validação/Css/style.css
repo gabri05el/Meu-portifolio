@@ -86,9 +86,19 @@ body {
 }
 
 .formulario__inputs i {
-    visibility: hidden;
     position: absolute;
     top: 2.5rem;
+}
+
+.formulario__inputs .fa-regular {
+    color: var(--cor-azul-01);
+    cursor: pointer;
+    right: 2.3rem;
+    font-size: 1.2rem;
+}
+
+.formulario__inputs .fa-solid {
+    visibility: hidden;
     right: 0.6rem;
     font-size: 1.5rem;
 }
