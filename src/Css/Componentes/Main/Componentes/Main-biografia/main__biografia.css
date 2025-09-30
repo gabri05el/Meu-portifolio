@@ -1,0 +1,51 @@
+@import url(./Componentes/01-Componente/componente__01.css);
+@import url(./Componentes/02-Componente/componente__02.css);
+
+.main__biografia {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+@media(max-width: 1200px) {
+    .main__biografia {       
+        background-image: var(--cor-forte-fraca-gradient);
+        display: block;
+        border-radius: 1rem;
+        padding: 2rem;
+    }
+    .main__biografia img {
+        display: none;
+    }
+    .main__biografia_textos, 
+    .main__biografia_texto {
+        margin-top: 1rem;
+    }
+    .main__biografia_titulo {
+        font-size: 2rem;
+    }
+    .main__biografia_texto {
+        font-size: 1.28rem;
+    }
+}
+@media(max-width: 860px) {
+    .main__biografia {       
+        background-image: var(--cor-fraca-forte-gradient);
+    }
+    .main__biografia_titulo {
+        color: var(--cor-fonte-02);
+        font-size: 1.9rem;
+    }
+    .main__biografia_texto {
+        color: var(--cor-fonte-01);
+        font-size: 1.2rem;
+    }
+}
+@media(max-width: 600px) {
+    .main__biografia_titulo {
+        font-size: 1.75rem;
+    }
+    .main__biografia_texto {
+        font-size: 1.11rem;
+    }
+}

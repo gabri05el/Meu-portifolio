@@ -1,0 +1,39 @@
+.main__contato_conteudo {
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+    gap: 1rem;
+}
+
+.main__contato_conteudo_i {
+    color: var(--cor-fonte-03);
+    font-size: 1.8rem;
+    text-shadow: 3px 3px 3px var(--cor-fonte-02);
+    width: 3rem;
+}
+
+.main__contato_conteudo_p, 
+.main__contato_conteudo_p_link {
+    color: var(--cor-fonte-02);
+    font-family: var(--fonte-main);
+}
+
+.main__contato_conteudo_p {
+    font-size: 1.4rem;
+}
+
+.main__contato_conteudo_p_link {
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding-right: 0.3rem;
+    border-right: 2px solid var(--cor-fonte-03);
+    border-bottom: 2px solid var(--cor-fonte-03);
+    border-bottom-right-radius: 0.3rem;
+    transition: var(--transicao-04s);
+}
+
+.main__contato_conteudo_p_link:hover {
+    color: var(--cor-fonte-01);
+    border-right: none;
+    border-bottom: none;
+}
