@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+:root {
+    --cor-de-fundo: linear-gradient(#777, #1f1d1d 70%);
+    --cor-branco-01: #fff;
+    --cor-preto-01: #181818;
+    --cor-preto-02: #2b2a2a;
+    --cor-cinza-01: #292929;
+    --cor-cinza-02: #a7a4a4;
+    --cor-azul: #0084ff;
+
+    --cor-do-piano: #474646cc;
+    --cor-da-tecla-preta: linear-gradient(#181818 70%, #3a3a3a);
+    --cor-das-letras-das-teclas-brancas: #0000004d;
+    --cor-das-letras-das-teclas-pretas: #fafafa4d;
+
+    --fonte-do-texto: 'Overpass', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: var(--fonte-do-texto);
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: var(--cor-de-fundo);
+    width: 100%;
+    min-height: 100vh;
+}
+
+.titulo {
+    color: var(--cor-branco-01);
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 2rem;
+    letter-spacing: 0.4rem;
+}
+
+.piano {
+    background-color: var(--cor-preto-01);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 70vh;
+    margin: 2rem auto;
+    border-radius: 1.3rem;
+}
+
+.botoes {
+    background-color: var(--cor-cinza-01);
+    color: var(--cor-cinza-02);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2rem;
+    border-top-left-radius: 1.3rem;
+    border-top-right-radius: 1.3rem;
+}
+
+.botoes h1 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.interruptor {
+    background-color: var(--cor-cinza-02);
+    display: flex;
+    width: 3rem;
+    height: 1.5rem;
+    padding: 0.2rem;
+    border-radius: 3rem;
+}
+
+.botao__interruptor {
+    background-color: var(--cor-branco-01);
+    height: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 1.5rem;
+}
+
+.teclado {
+    background-color: var(--cor-do-piano);
+    display: flex;
+    width: 100%;
+    height: 25rem;
+    padding: 0 2.5rem 1.8rem 2.5rem;
+    border-bottom-left-radius: 1.3rem;
+    border-bottom-right-radius: 1.3rem;
+}
+
+.tecla {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    user-select: none;
+}
+
+.tecla span {
+    position: absolute;
+    font-weight: 600;
+    transition-duration: 0.3s;
+}
+
+.tecla__branca {
+    background-color: var(--cor-branco-01);
+    color: var(--cor-das-letras-das-teclas-brancas);
+    flex-grow: 1;
+    border-bottom: 0.5rem solid #ddd;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    margin-left: -1.5rem;
+    z-index: 1;
+}
+
+.tecla__preta {
+    background: var(--cor-da-tecla-preta);
+    color: var(--cor-das-letras-das-teclas-pretas);
+    flex-grow: 1;
+    height: 11.8rem;
+    margin-left: -1.2rem;
+    border-bottom: 0.5rem solid var(--cor-preto-02);
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    z-index: 2;
+}
+
+.tecla:nth-child(1) {
+    margin-left: 0;
+}
+
+.tecla:nth-child(5),
+.tecla:nth-child(12),
+.tecla:nth-child(17),
+.tecla:nth-child(24),
+.tecla:nth-child(29) {
+    margin-right: 1.7rem;
+}
+
+.tecla__preta_precionada {
+    background: linear-gradient(#3a3a3a, #181818);
+    height: 11.6rem;
+    border-bottom: none;
+    transition: all 0.3s;
+}
+
+.botao__interruptor_ativado {
+    background-color: var(--cor-azul);
+    justify-content: flex-end;
+}
+
+.desabilita__teclas span {
+    opacity: 0;
+}
