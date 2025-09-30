@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="Css/style.css">
+        <script defer src="Js/script.js"></script>
+        <title>Jogo da Cobrinha</title>
+    </head>
+    <body>
+        <header>
+            <div class="titulo">
+                <p>Jogo Da Cobrinha</p>
+            </div>
+            <div class="pontuacao">
+                <p>Pontos: <span>00</span></p>
+            </div>
+        </header>
+        <main>
+            <section class="jogo">
+                <div class="game__over">
+                    <p class="over">Game Over</p>
+                    <p class="pontuacao__total">Pontuação Total: <span>00</span></p>
+                    <button class="botao__play">
+                        <span class="material-symbols-outlined">play_circle</span>
+                        Jogar Novamente
+                    </button>
+                </div>
+                <div>
+                    <canvas width="600" height="600"></canvas>
+                </div>
+            </section>
+            <section class="velocidade__configuracao">
+                <p class="titulo__confg">Velocidade</p>
+                <div class="velocidade confg__velocidade_ativada" data-velocidade=320>
+                    <h3>Facil</h3>
+                </div>
+                <div class="velocidade" data-velocidade=180>
+                    <h3>Normal</h3>
+                </div>
+                <div class="velocidade" data-velocidade=50>
+                    <h3>Dificil</h3>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

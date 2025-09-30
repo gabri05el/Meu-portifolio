@@ -1,0 +1,90 @@
+@media(max-width: 720px) {
+        /* Header e Footer */
+    .tela__de_login, 
+    .tela__de_fim_tempo,
+    .tela__de_fim_jogo {
+        padding-top: 20%;
+    }
+    .tela__login, 
+    .tela__fim {
+        width: 22rem;
+        border-radius: 1.5rem;
+    }
+        /* Main */
+    .cabecalho {
+        font-size: 2.5rem;
+    }
+    .menu__jogo {
+        padding: 1.5rem;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+    }
+    .menu__jogo p {
+        font-size: 1.8rem;
+    }
+    .cartas__jogo {
+        padding: 0.4rem;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    }
+    .carta {
+        width: 7rem;
+        height: 28vh;
+        border-radius: 0.7rem;
+    }
+    .lados {
+        border-radius: 0.7rem;
+    }
+}
+@media(max-width: 520px) {
+        /* Header e Footer */
+    .tela__de_login, 
+    .tela__de_fim_tempo,
+    .tela__de_fim_jogo {
+        padding-top: 30%;
+    }
+    .tela__login, 
+    .tela__fim {
+        width: 16rem;
+        height: 40vh;
+        border-radius: 1rem;
+    }
+    .tela__fim {
+        padding: 1rem;
+    }
+    .div__login i, 
+    .div__final i {
+        font-size: 3rem;
+    }
+    .div__login p, 
+    .div__final p {
+        font-size: 1.2rem;
+    }
+    .input__login {
+        font-size: 1rem;
+        padding: 0.7rem;
+        border-radius: 0.7rem;
+    }
+    .botao {
+        font-size: 1rem;
+        padding: 0.6rem;
+        border-radius: 0.6rem;
+    }
+        /* Main */
+    .cabecalho {
+        font-size: 1.8rem;
+    }
+    .menu__jogo {
+        padding: 1rem;
+    }
+    .menu__jogo p {
+        font-size: 1.2rem;
+    }
+    .cartas__jogo {
+        padding: 0.5rem;
+    }
+    .carta {
+        width: 6rem;
+        height: 24vh;
+    }
+}
