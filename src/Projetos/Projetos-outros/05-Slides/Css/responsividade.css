@@ -1,0 +1,23 @@
+@media(max-width: 920px) {
+    .conteudo a {
+        font-size: 2rem;
+        padding: 1.6rem;
+    }
+}
+
+@media(max-width: 710px) {
+    .conteudo a {
+        font-size: 1.6rem;
+        padding: 1.2rem;
+    }
+}
+
+@media(max-width: 560px) {
+    .titulo p {
+        font-size: 2rem;
+    }
+    .conteudo a {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+}

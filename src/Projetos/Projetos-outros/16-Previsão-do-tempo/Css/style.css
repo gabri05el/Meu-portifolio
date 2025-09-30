@@ -1,0 +1,109 @@
+@import url(./responsividade.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+:root {
+    --fonte-do-texto: 'Dancing Script', cursive;
+
+    --cor-preto-01: #0000006e;
+    --cor-preto-02: #00000038;
+    --cor-branco: #ffffff;
+    --cor-azul: #099bf0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: var(--fonte-do-texto);
+    margin: 0;
+    padding: 0;    
+}
+
+body {
+    background-image: url("https://source.unsplash.com/1600x900/?landscape");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.caixa_maior {
+    background-color: var(--cor-preto-01);
+    width: 95%;
+    max-width: 28.1rem;
+    border-radius: 1.6rem;
+    padding: 2.5rem;
+}
+
+.caixa_pesquisa {
+    display: flex;
+}
+
+.input_cidade {
+    background-color: var(--cor-preto-02);
+    color: var(--cor-branco);
+    border: none;
+    outline: none;
+    width: 80%;
+    font-size: 1.5rem;
+    border-radius: 1.6rem;
+    padding: 1rem;
+}
+
+.input_cidade::placeholder {
+    color: var(--cor-branco);
+}
+
+.botao_busca {
+    background-color: var(--cor-preto-01);
+    color: var(--cor-branco);
+    cursor: pointer;
+    float: right;
+    outline: none;
+    border: none;
+    border-radius: 1.2rem;
+    padding: 1rem;
+    margin-left: 0.3rem;
+}
+
+.botao_busca:hover {
+    color: var(--cor-azul);
+    transition: all 0.4s;
+}
+
+.busca {
+    width: 1.2rem;
+}
+
+.caixa_media {
+    margin-top: 1.9rem;
+}
+
+.cidade {
+    color: var(--cor-branco);
+    font-size: 1.7rem;
+}
+
+.temperatura {
+    color: var(--cor-branco);
+    font-size: 1.2rem;
+    margin-top: 0.9rem;
+}
+
+.caixa_menor {
+    display: flex;
+    align-items: center;
+    margin-top: 0.9rem;
+}
+
+.texto_previsao {
+    color: var(--cor-branco);
+    margin-left: 0.6rem;
+    font-size: 1.2rem;
+}
+
+.umidade {
+    color: var(--cor-branco);
+    margin-top: 0.9rem;
+    font-size: 1.2rem;
+}

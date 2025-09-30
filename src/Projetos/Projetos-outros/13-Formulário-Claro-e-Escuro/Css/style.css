@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+:root {
+    --cor-branco: #ffffff;
+    --cor-cinza-01: #504f4f;
+    --cor-cinza-02: #242424;
+    --cor-preta: #000000;
+    --cor-roxa-01: #b902b9;
+    --cor-roxa-02: #830183;
+    --cor-roxa-03: #360136;
+    --cor-de-fundo: linear-gradient(240deg, #b902b9, #830183, #360136);
+    --fonte: 'Quicksand', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: var(--fonte);
+    padding: 0;
+    margin: 0;
+}
+
+.main_conteudo_principal {
+    background: var(--cor-de-fundo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: 100vh;
+}
+
+.login_form {
+    background-color: var(--cor-branco);
+    display: flex;
+    flex-direction: column;
+    gap: 1.9rem;
+    padding: 1.9rem 3.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.336);
+    animation: dark-to-light 0.5s ease-in-out;
+}
+
+.form_cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form_cabecalho h1 {
+    position: relative;
+    font-size: 2.5rem;
+}
+
+.form_cabecalho h1::before {
+    background-color: var(--cor-roxa-03);
+    position: absolute;
+    bottom: 0.3rem;
+    width: 40%;
+    height: 0.2rem;
+    border-radius: 0.5rem;
+    content: '';
+}
+
+.modo_icone {
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.social_media {
+    display: flex;
+    justify-content: space-around;
+}
+
+.social_media img {
+    width: 2.2rem;
+}
+
+.social_media img:hover {
+    transform: scale(1.2);
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.input_caixa label {
+    color: var(--cor-cinza-01);
+    font-size: 0.9rem;
+}
+
+.input-campos {
+    display: flex;
+    align-items: center;
+    cursor: text;
+    gap: 0.9rem;
+    padding: 0.2rem;
+    border-bottom: 0.1rem solid var(--cor-roxa-03);
+}
+
+.input-campos i {
+    color: var(--cor-preta);
+    font-size: 1.1rem;
+}
+
+.input-campos input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    width: 16.2rem;
+    padding: 0.5rem 0.3rem;
+}
+
+.senha_esquecida a {
+    color: var(--cor-cinza-01);
+    text-decoration: none;
+    font-size: 0.7rem;
+}
+
+.senha_esquecida a:hover {
+    color: var(--cor-roxa-02);
+    text-decoration: underline;
+}
+
+.login_button {
+    background: var(--cor-de-fundo);
+    color: var(--cor-branco);
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0.4rem;
+    font-size: 1.1rem;
+    border-radius: 0.2rem;
+}
+
+.login_button:hover {
+    transform: scale(1.05);
+}
+
+.dark.login_form {
+    background-color: var(--cor-cinza-02);
+    color: var(--cor-branco);   
+    animation: light-to-dark 0.5s ease-in-out;
+}
+
+.dark.login_form .input-campos input,
+.dark.login_form .input-campos i,
+.dark.login_form label,
+.dark.login_form .senha_esquecida a {
+    color: var(--cor-branco);
+}
+
+.dark.login_form #senha_esquecida a:hover {
+    color: var(--cor-roxa-02);
+}
+
+@keyframes dark-to-light {
+    0% {
+        background-color: var(--cor-cinza-02);
+    }
+    100% {
+        background-color: var(--cor-branco);
+    }
+}
+
+@keyframes light-to-dark {
+    0% {
+        background-color: var(--cor-branco);
+    }
+    100% {
+        background-color: var(--cor-cinza-02);
+    }
+}

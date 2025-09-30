@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+
+:root {
+    --cor-branco-01: #fff;
+    --cor-azul-01: #190482;
+    --cor-azul-02: #7752FE;
+    --cor-azul-03: #8E8FFA;
+    --cor-azul-04: #C2D9FF;
+    
+    --fonte-titulo: 'Roboto Mono', monospace;
+    --fonte-texto: 'Nunito', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--cor-azul-01);
+    width: 100%;
+    height: 100vh;
+}
+
+.titulo {
+    color: var(--cor-azul-03);
+    text-align: center;
+    font-family: var(--fonte-titulo);
+    font-size: 2.6rem;
+    padding: 1rem 0;
+}
+
+.conteudo {
+    background-color: var(--cor-azul-02);
+    position: relative;
+    width: 70%;
+    height: 80vh;
+    margin-left: 15%;
+    border-radius: 1.6rem;
+}
+
+.caixa__incio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lista {
+    position: absolute;
+    top: 5%;
+    width: 80%;
+    height: 60%;
+}
+
+.celula {
+    width: 100%;
+}
+
+.texto {
+    color: var(--cor-azul-04);
+    font-family: var(--fonte-texto);
+    font-size: 1.8rem;
+    margin-top: 0.8rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input {
+    background-color: transparent;
+    color: var(--cor-azul-01);
+    outline: none;
+    font-family: var(--fonte-texto);
+    font-size: 1.4rem;
+    width: 80%;
+    padding: 0.8rem;
+    border: 2px solid var(--cor-azul-03);
+    border-radius: 1rem;
+}
+
+.input::placeholder {
+    color: var(--cor-azul-01);
+}
+
+.sortear__botao, 
+.reinicia__botao {
+    position: absolute;
+    bottom: 5%;
+    width: 40%;
+}
+
+.botao {
+    background-color: var(--cor-azul-01);
+    color: var(--cor-azul-03);
+    cursor: pointer;
+    font-family: var(--fonte-texto);
+    font-size: 1.6rem;
+    width: 100%;
+    padding: 1rem;
+    border: 3px solid var(--cor-azul-03);
+    border-radius: 1rem;
+    transition: all 0.8s;
+}
+
+.botao:hover {
+    background-color: transparent;
+    color: var(--cor-azul-01);
+}
+
+.caixa__fim {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.resultado {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 10%;
+    width: 80%;
+    gap: 0.5rem;
+}
+
+.numero {
+    background-color: var(--cor-azul-04);
+    color: var(--cor-azul-01);
+    font-family: var(--fonte-texto);
+    font-size: 2.6rem;
+    padding: 0.8rem 1.6rem;
+    border-radius: 1rem;
+}
+
+.desabilita {
+    display: none;
+}

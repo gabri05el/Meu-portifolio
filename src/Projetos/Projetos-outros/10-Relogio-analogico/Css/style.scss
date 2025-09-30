@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+
+$fonte-texto: 'Josefin Sans', sans-serif;
+$fonte-numero: 'Bungee Shade', cursive;
+
+$cor-vermelho: #ff0000;
+$cor-branco: #dde6ed;
+$cor-cinza-fraco: #9db2bf;
+$cor-cinza: #526d82;
+$cor-cinza-forte: #27374d;
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: $cor-cinza-forte;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    header {
+        section {
+            text-align: center;
+            div {
+                margin: 1rem 0;
+                .titulo {
+                    color: $cor-cinza-fraco;
+                    font-family: $fonte-texto;
+                    font-size: 2.4rem;
+                    padding: 1.8rem;
+                }
+            }
+        }
+    }
+    main {
+        .relogio {
+            background-color: $cor-cinza;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 450px;
+            min-height: 450px;
+            border-radius: 50%;
+            border: 15px solid $cor-cinza-fraco;
+            position: relative;
+            .ponteiro__horas {
+                background-color: $cor-cinza-fraco;
+                width: 0.5rem;
+                height: 130px;
+                border-radius: 5px;
+                transform: translate(0, -50%);
+                transform-origin: bottom center;
+                position: absolute;
+            }
+            .ponteiro__minutos {
+                background-color: $cor-cinza-fraco;
+                width: 0.255rem;
+                height: 160px;
+                border-radius: 5px;
+                transform: translate(0, -50%);
+                transform-origin: bottom center;
+                position: absolute;
+            }
+            .ponteiro__segundos {
+                background: $cor-vermelho;
+                width: 0.225rem;
+                height: 180px;
+                border-radius: 5px;
+                transform: translate(0, -50%);
+                transform-origin: bottom center;
+                position: absolute;
+            }
+            .ponto {
+                background-color: $cor-branco;
+                width: 1.5rem;
+                height: 1.5rem;
+                border-radius: 50%;
+                position: absolute;
+            }
+            .numero {
+                color: $cor-branco;
+                text-align: center;
+                width: 100%;
+                height: 100%;
+                font-family: $fonte-numero;
+                font-size: 1.2rem;
+                position: absolute;
+            }
+            .numero__1 {
+                transform: rotate(30deg);
+            }
+            .numero__2 {
+                transform: rotate(60deg);
+            }
+            .numero__3 {
+                transform: rotate(90deg);
+            }
+            .numero__4 {
+                transform: rotate(120deg);
+            }
+            .numero__5 {
+                transform: rotate(150deg);
+            }
+            .numero__6 {
+                transform: rotate(180deg);
+            }
+            .numero__7 {
+                transform: rotate(210deg);
+            }
+            .numero__8 {
+                transform: rotate(240deg);
+            }
+            .numero__9 {
+                transform: rotate(270deg);
+            }
+            .numero__10 {
+                transform: rotate(300deg);
+            }
+            .numero__11 {
+                transform: rotate(330deg);
+            }
+        }
+    }
+}
