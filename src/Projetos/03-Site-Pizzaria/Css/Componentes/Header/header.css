@@ -1,0 +1,68 @@
+@import url(./Componentes/Componente-01/header__logo.css);
+@import url(./Componentes/Componente-02/header__barra.css);
+@import url(./Componentes/Componente-03/header__menu.css);
+
+.header {
+    background-color: var(--cor-01);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+    padding: 1rem;
+}
+
+@media(max-width: 940px) {
+    .header__logo {
+        width: 7rem;
+    }
+}
+
+@media(max-width: 700px) {
+    .header__menu {
+        background-color: var(--cor-01);
+        z-index: 1;
+        align-items: center;
+        flex-direction: column;
+        position: fixed;
+        top: 7.9rem;
+        right: -100%;
+        width: 100%;
+        padding: 1rem;
+        gap: 1rem;
+        border-radius: 0 0 1.8rem 1.8rem;
+        transition: all 0.6s;
+    }
+    .header__menu_texto {
+        font-size: 1.4rem;
+        width: 100px;
+    }
+    .header__menu_texto:hover {
+        color: var(--cor-03);
+        border: none;
+    }
+    .header__menu.ativo {
+        right: 0;
+    }
+    .barras {
+        display: block;
+    }
+    .barras.ativo .barra:nth-child(2) {
+        opacity: 0;
+    }
+    .barras.ativo .barra:nth-child(1) {
+        transform: translateY(0.6rem) rotate(45deg);
+    }
+    .barras.ativo .barra:nth-child(3) {
+        transform: translateY(-0.6rem) rotate(-45deg);
+    }
+}
+
+@media(max-width: 600px) {
+    .header__logo {
+        height: 15vh;
+    }
+    .header__menu {
+        top: 8rem;
+    }
+}
