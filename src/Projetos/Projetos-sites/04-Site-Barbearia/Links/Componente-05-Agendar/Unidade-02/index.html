@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Agendar - Barbearia</title>
+        <link rel="shortcut icon" href="../../../Icons/Icon-Agenda/time-and-calendar.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="../../../Css/style.css">
+        <script defer src="../../../Js/Agendar/agendar.js"></script>
+        <script defer src="../../../Js/script.js"></script>
+    </head>
+    <body>
+        <header>
+            <section class="header__componentes">
+                <div class="header__componente">
+                    <img src="../../../Imagem/Img-logo/logo-01.png" class="header__componente_img_logo" alt="Logo do site">
+                </div>
+                <div id="header-componente-links" class="header__componente_links">
+                    <a href="../../../index.html" class="header__componente_link">Menu</a>
+                    <a href="../../Componente-01-Cortes/index.html" class="header__componente_link">Cortes</a>
+                    <a href="../../Componente-02-Mensalidade/index.html" class="header__componente_link">Mensalidade</a>
+                    <a href="../../Componente-03-Localidade/index.html" class="header__componente_link">Localidades</a>
+                    <a href="../../Componente-04-Contatos/index.html" class="header__componente_link">Contato</a>
+                </div>
+                <div id="div-barras" class="div_barras">
+                    <span class="barra"></span>
+                    <span class="barra"></span>
+                    <span class="barra"></span>
+                </div>
+            </section>
+        </header>
+        <main>
+            <section class="main__componentes">
+                <div class="main__localidade">
+                    <div class="main__localidade_componente">
+                        <div class="main__localidade_contato">
+                            <h2>Unidade 2</h2>
+                            <div class="main__localidade_contato_div">
+                                <p><i class="fa-solid fa-house"></i>R.XXXXXX, NºX</p>
+                                <p><i class="fa-solid fa-phone"></i>(XX) XXXXX-XXXX</p>
+                                <p><i class="fa-solid fa-envelope"></i>XXXXXX@.XXXXX.com</p>
+                            </div>
+                        </div>
+                        <div class="main__localidade_informacoes">
+                            <img src="../../../Imagem/Img-Barbearia/barbearia-02.avif" class="main__localidade_informacoes_img" alt="Imagem da Barbearia">
+                            <div class="main__localidade_informacoes_div">
+                                <h4>Horario De funcionamento</h4>
+                                <p><i class="fa-solid fa-clock"></i> Das 9:00 ás 21:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__agendar">
+                    <form class="main__agendar_form" id="agendar">
+                        <div class="main__agendar_campo">
+                            <div class="main__agendar_campo_dados">
+                                <h2 class="main__agendar_campo_dados_titulo">Unidade 02</h2>
+                            </div>
+                            <div class="main__agendar_campo_dados">
+                                <input type="text" name="Nome" id="agendar--dados-nome" class="agendar__campo_dados_input" placeholder="Nome Completo*">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <i class="fa-solid fa-circle-exclamation"></i>
+                                <small></small>
+                            </div>
+                            <div class="main__agendar_campo_dados">
+                                <input type="number" name="cpf" id="agendar--dados-cpf" class="agendar__campo_dados_input" placeholder="Cpf*">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <i class="fa-solid fa-circle-exclamation"></i>
+                                <small></small>
+                            </div>
+                            <div class="main__agendar_campo_dados">
+                                <input type="number" name="celular" id="agendar--dados-celular" class="agendar__campo_dados_input" placeholder="Celular*">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <i class="fa-solid fa-circle-exclamation"></i>
+                                <small></small>
+                            </div>
+                            <div class="main__agendar_campo_dados">
+                                <input type="email" name="email" id="agendar--dados-email" class="agendar__campo_dados_input" placeholder="E-mail*">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <i class="fa-solid fa-circle-exclamation"></i>
+                                <small></small>
+                            </div>
+                            <div class="main__agendar_campo_dados">
+                                <select name="unidade" id="agendar--dados-unidade" class="agendar__campo_dados_select">
+                                    <option>Unidade - 02</option>
+                                </select>
+                            </div>
+                            <div class="main__agendar_campo_dados">
+                                <select name="horario" id="agendar--dados-horario" class="agendar__campo_dados_select">
+                                    <option>9:00</option>
+                                    <option>9:30</option>
+                                    <option>10:00</option>
+                                    <option>10:30</option>
+                                    <option>11:00</option>
+                                    <option>11:30</option>
+                                    <option>12:00</option>
+                                    <option>12:30</option>
+                                    <option>13:00</option>
+                                    <option>13:30</option>
+                                    <option>14:00</option>
+                                    <option>14:30</option>
+                                    <option>15:00</option>
+                                    <option>15:30</option>
+                                    <option>16:00</option>
+                                    <option>16:30</option>
+                                    <option>17:00</option>
+                                    <option>17:30</option>
+                                    <option>18:00</option>
+                                    <option>18:30</option>
+                                    <option>19:00</option>
+                                    <option>19:30</option>
+                                    <option>20:00</option>
+                                    <option>20:30</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="main__agendar_campo">
+                            <input type="submit" value="Enviar" class="agendar__campo_botao">
+                        </div>
+                    </form>
+                </div>
+                <div class="main__agenda">
+                    <div class="main__agenda_componente">
+                        <h2>Agende na unidade mais proxíma de vôce</h2>
+                    </div>
+                    <div class="main__agenda_componente">
+                        <div class="main__agenda_componente_div">
+                            <h3>Unidade 1</h3>
+                            <p><i class="fa-solid fa-clock"></i> Das 9:00 ás 21:00</p>
+                            <a href="../Unidade-01/index.html">Agendar</a>
+                        </div>
+                        <div class="main__agenda_componente_div">
+                            <h3>Unidade 3</h3>
+                            <p><i class="fa-solid fa-clock"></i> Das 9:00 ás 21:00</p>
+                            <a href="../Unidade-03/index.html">Agendar</a>
+                        </div>
+                        <div class="main__agenda_componente_div">
+                            <h3>Unidade 4</h3>
+                            <p><i class="fa-solid fa-clock"></i> Das 9:00 ás 21:00</p>
+                            <a href="../Unidade-04/index.html">Agendar</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <section class="footer__componentes">
+                <div class="footer__componente">
+                    <img src="../../../Imagem/Img-Footer/fundo-01.png" class="footer__componente_img_footer" alt="Imagem barber shop">
+                </div>
+                <div class="footer__componente">
+                    <a href="#" class="footer__componente_redes_sociais">
+                        <i class="fa-brands fa-facebook"></i>
+                        <p>XXXXXX</p>
+                    </a>
+                    <a href="#" class="footer__componente_redes_sociais">
+                        <i class="fa-brands fa-instagram"></i>
+                        <p>XXXXXX</p>
+                    </a>
+                    <a href="#" class="footer__componente_redes_sociais">
+                        <i class="fa-brands fa-square-x-twitter"></i>
+                        <p>XXXXXX</p>
+                    </a>
+                    <a href="#" class="footer__componente_redes_sociais">
+                        <i class="fa-brands fa-tiktok"></i>
+                        <p>XXXXXX</p>
+                    </a>
+                </div>
+            </section>
+        </footer>
+    </body>
+</html>

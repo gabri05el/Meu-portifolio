@@ -1,0 +1,16 @@
+@import url(./Componentes-Main/01-Sobre/sobre.css);
+@import url(./Componentes-Main/02-Localidades/localidade.css);
+@import url(./Componentes-Main/03-Cortes/corte.css);
+@import url(./Componentes-Main/04-Agendar/agendar.css);
+@import url(./Componentes-Main/05-Link-Corte/link_corte.css);
+@import url(./Componentes-Main/06-Link-Mensalidade/mensalidade.css);
+@import url(./Componentes-Main/07-Link-Contato/contato.css);
+@import url(./Componentes-Main/08-Link-Agendar/agendar.css);
+
+.main__componentes {
+    background: var(--cor-fundo-main);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 3rem;
+}

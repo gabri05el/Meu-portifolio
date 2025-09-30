@@ -1,0 +1,119 @@
+.main {
+    background-color: var(--cor-azul-02);
+}
+
+.main .sobre {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.875rem;
+    padding: 2.5rem;
+    margin-top: 3.75rem;
+}
+
+.sobre_titulo {
+    color: var(--cor-branco);
+    text-align: center;
+    grid-column: 1/-1;
+    margin: 1.875rem 0;
+}
+
+.sobre_titulo h1 {
+    color: var(--cor-cinza-01);
+    font-family: var(--fonte-dos-titulos);
+    font-size: 2.5rem;
+    margin-bottom: 0.9rem;
+}
+
+.sobre_titulo p {
+    color: var(--cor-cinza-02);
+    position: relative;
+    font-family: var(--fonte-principal);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.sobre_titulo div {
+    display: flex;
+    justify-content: center;
+    gap: 0.625rem;
+}
+
+.sobre_titulo span {
+    background-color: var(--cor-cinza-02);
+    display: block;
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 50%;
+}
+
+.sobre img {
+    cursor: pointer;
+    filter: blur(0);
+    max-width: 100%;
+    grid-row: 2;
+    border-radius: 0.25rem;
+    animation: ladoSecao 0.5s ease-in forwards;
+}
+
+.sobre img:hover {
+    filter: blur(1px);
+    transition: 0.5s ease-in;
+}
+
+.sobre_conteudo {
+    color: var(--cor-cinza-02);
+    display: grid;
+    grid-column: 2/-1;
+    grid-template-columns: 1fr 1fr;
+    animation: sobreSecao 0.6s ease-in-out forwards;
+}
+
+.sobre_texto {
+    font-family: var(--fonte-principal);
+    display: grid;
+    grid-column: 1/-1;
+    grid-template-columns: 1fr 1fr;
+}
+
+.sobre_texto h1 {
+    color: var(--cor-branco);
+    font-size: 2.3rem;
+    grid-column: 1/-1;
+}
+
+.sobre_texto h1::after {
+    background-color: var(--cor-cinza-01);
+    display: block;
+    width: 3.75rem;
+    height: 0.375rem;
+    margin: 1.25rem 0;
+    border-radius: 0.312rem;
+    content: '';
+}
+
+.sobre_texto p {
+    font-size: 1.3rem;
+    grid-row: 2;
+    grid-column: 1/-1;
+}
+
+.sobre_info {
+    display: grid;
+    grid-column: 1/-1;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.9rem;
+    margin-top: 1.875rem;
+}
+
+.sobre_info i {
+    color: var(--cor-aqua-01);
+    display: inline-block;
+    padding-right: 0.9rem;
+    font-size: 1.5rem;
+}
+
+.sobre_info p {
+    font-family: var(--fonte-principal); 
+    font-size: 0.9rem;
+}

@@ -1,0 +1,17 @@
+.header__componente_img_logo {
+    width: 260px;
+    height: 200px;
+}
+
+.header__componente_link {
+    color: var(--cor-05);
+    text-decoration: none;
+    font-family: var(--texto-header);
+    font-size: 1.8rem;
+    transition: all 0.4s;
+}
+
+.header__componente_link:hover {
+    color: var(--cor-06);
+    text-decoration: overline;
+}
