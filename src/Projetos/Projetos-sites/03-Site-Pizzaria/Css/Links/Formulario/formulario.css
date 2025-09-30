@@ -1,0 +1,63 @@
+@import url(./Componentes/Campo-01-e-02/formulario__dados.css);
+@import url(./Componentes/Campo-03/formulario__botao.css);
+
+.formulario {
+    background-color: var(--cor-02);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem 5rem;
+    padding: 3rem 1rem;
+    gap: 2rem;
+    border-radius: 2rem;
+}
+
+.formulario__campo {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 80%;
+}
+
+@media(max-width: 700px) {
+    .formulario {
+        margin: 1rem 2rem;
+    }
+    .formulario__campo {
+        gap: 1.5rem;
+        width: 90%;
+    }
+    .formulario__campo_dados_titulo {
+        font-size: 1.6rem;
+        letter-spacing: 0.2rem;
+    }
+    .formulario__campo_dados_label {
+        font-size: 1.2rem;
+        margin: 0.2rem;
+    }
+    .formulario__campo_dados_input {
+        font-size: 0.8rem;
+        width: 100%;
+        padding: 0.6rem 0.4rem;
+    }
+    .formulario__campo_dados_select {
+        font-size: 0.8rem;
+        width: 100%;
+        padding: 0.6rem 0.4rem;
+    }
+    .formulario__campo_dados i {
+        font-size: 1rem;
+        bottom: 1rem;
+        right: 0.6rem;
+    }
+    .formulario__campo_dados small {
+        font-size: 1rem;
+        top: 5.2rem;
+        left: 0.7rem;
+    }
+    .formulario__campo_botao {
+        font-size: 1.5rem;
+        width: 60%;
+        padding: 0.8rem;
+    }
+}
