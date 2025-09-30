@@ -1,0 +1,127 @@
+.header__div_section_imagem {
+    background-color: var(--cor-03);
+    cursor: pointer;
+    position: relative;
+    padding: 0.4rem;
+    border-radius: 50%;
+    border: solid 3px transparent;
+    transition: all 0.6s;
+}
+
+.header__div_section_imagem:hover {
+    border: solid 3px var(--cor-02);
+}
+
+.header__div_section_img {
+    width: 100px;
+}
+
+.header__div_section_pesquisa {
+    display: flex;
+    min-width: 650px;
+}
+
+.header__div_section_pesquisa_input {
+    background-color: var(--cor-04);
+    color: var(--cor-01);
+    outline: none;
+    font-family: var(--fonte-header);
+    font-size: 1.4rem;
+    width: 94%;
+    padding: 0.6rem 0.4rem;
+    border-top-left-radius: 0.6rem;
+    border-bottom-left-radius: 0.6rem;
+    border-top: solid 3px var(--cor-01);
+    border-right: transparent;
+    border-bottom: solid 3px var(--cor-01);
+    border-left: solid 3px var(--cor-01);
+}
+
+.header__div_section_pesquisa_input::placeholder {
+    color: var(--cor-01);
+}
+
+.header__div_section_pesquisa_button {
+    background-color: var(--cor-01);
+    color: var(--cor-04);
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 6%;
+    border-top-right-radius: 0.6rem;
+    border-bottom-right-radius: 0.6rem;
+    border-top: solid 3px var(--cor-01);
+    border-right: solid 3px var(--cor-01);
+    border-bottom: solid 3px var(--cor-01);
+    border-left: transparent;
+    transition: all 0.4s;
+}
+
+.header__div_section_pesquisa_button:hover {
+    color: var(--cor-05);
+}
+
+.header__div_ferramentas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    width: 300px;
+}
+
+.header__div_section_perfil {
+    background-color: var(--cor-01);
+    padding: 0.3rem 1rem;
+    border-radius: 2rem;
+    transition: all 0.8s;
+}
+
+.header__div_section_perfil:hover {
+    background-color: var(--cor-05);
+}
+
+.header__div_section_perfil_a {
+    color: var(--cor-03);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    gap: 0.4rem;
+}
+
+.header__div_section_perfil_a_i {
+    font-size: 2.7rem;
+}
+
+.header__div_section_perfil_a_p {
+    font-family: var(--fonte-header);
+    font-size: 1.1rem;
+}
+
+.header__div_section_compra {
+    display: flex;
+    cursor: pointer;
+    position: relative;
+}
+
+.header__div_section_compra_i {
+    color: var(--cor-01);
+    font-size: 3.6rem;
+    transition: all 0.6s;
+}
+
+.header__div_section_compra_i:hover {
+    color: var(--cor-05);
+}
+
+.header__div_section_compra_p {
+    background-color: var(--cor-01);
+    color: var(--cor-03);
+    position: absolute;
+    font-family: var(--fonte-header);
+    font-size: 1.1rem;
+    top: 0.5rem;
+    right: -2rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 0.2rem;
+}

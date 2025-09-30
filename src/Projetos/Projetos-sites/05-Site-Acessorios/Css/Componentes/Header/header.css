@@ -1,0 +1,158 @@
+@import url(./header-section/header_section.css);
+@import url(./header-nav/header_nav.css);
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 100%;
+    padding: 2rem 0;
+}
+
+.header__div:nth-child(2) {
+    background-color: var(--cor-01);
+}
+
+@media(max-width: 1120px) {
+    .header__div {
+        padding: 1rem 0;
+    }
+    .header__div:nth-child(2) {
+        display: none;
+    }
+
+    .header__div_section_imagem {
+        padding: 0.3rem;
+        border: solid 2px transparent;
+    }
+    .header__div_section_imagem:hover {
+        border: solid 2px var(--cor-02);
+    }
+    .header__div_section_img {
+        width: 80px;
+    }
+    .header__div_section_pesquisa {
+        min-width: 450px;
+    }
+    .header__div_section_pesquisa_input {
+        font-size: 1.3rem;
+        padding: 0.4rem 0.3rem;
+        border-top: solid 2px var(--cor-01);
+        border-bottom: solid 2px var(--cor-01);
+        border-left: solid 2px var(--cor-01);
+    }
+    .header__div_section_pesquisa_button {
+        font-size: 1rem;
+        width: 10%;
+        border-top: solid 2px var(--cor-01);
+        border-right: solid 2px var(--cor-01);
+        border-bottom: solid 2px var(--cor-01);
+    }
+    .header__div_ferramentas {
+        gap: 2rem;
+        width: 250px;
+    }
+    .header__div_section_perfil {
+        padding: 0.6rem;
+        border-radius: 1.3rem;
+    }
+    .header__div_section_perfil_a {
+        gap: 0.4rem;
+    }
+    .header__div_section_perfil_a_i {
+        font-size: 1.8rem;
+    }
+    .header__div_section_perfil_a_p {
+        font-size: 1rem;
+    }
+    .header__div_section_compra_i {
+        font-size: 3rem;
+    }
+    .header__div_section_compra_p {
+        font-size: 1rem;
+        top: 0.5rem;
+        right: -1.5rem;
+        padding: 0.1rem 0.4rem;
+    }   
+}
+
+@media(max-width: 870px) {
+    .header__div_section_img {
+        width: 70px;
+    }
+    .header__div_section_pesquisa {
+        min-width: 300px;
+    }
+    .header__div_section_pesquisa_input {
+        font-size: 1.2rem;
+        border-top-left-radius: 0.4rem;
+        border-bottom-left-radius: 0.4rem;
+    }
+    .header__div_section_pesquisa_button {
+        border-top-right-radius: 0.4rem;
+        border-bottom-right-radius: 0.4rem;
+    }
+    .header__div_ferramentas {
+        width: 100px;
+    }
+    .header__div_section_perfil {
+        background-color: transparent;
+        padding: 0;
+        border-radius: 0;
+    }
+    .header__div_section_perfil:hover {
+        background-color: transparent;
+    }
+    .header__div_section_perfil_a {
+        color: var(--cor-01);
+        gap: 0.4rem;
+        transition: all 0.5s;
+    }
+    .header__div_section_perfil_a:hover {
+        color: var(--cor-05);
+    }
+    .header__div_section_perfil_a_i {
+        font-size: 1.6rem;
+    }
+    .header__div_section_perfil_a_p {
+        display: none;
+    }
+    .header__div_section_compra_i {
+        font-size: 2.4rem;
+    }
+    .header__div_section_compra_p {
+        display: none;
+    }
+}
+
+@media(max-width: 560px) {
+    .header__div {
+        justify-content: space-between;
+        padding: 1rem 2rem;
+    }
+
+    .header__div_section_img {
+        width: 65px;
+    }
+    .header__div_section_pesquisa {
+        display: none;
+    }
+    .header__div_section_compra_i {
+        font-size: 2.2rem;
+    }
+    .header__div_section_compra_p {
+        background-color: transparent;
+        color: var(--cor-01);
+        display: flex;
+        top: -0.3rem;
+        right: -0.8rem;
+        padding: 0.1rem;
+        border-radius: 0;
+    }
+}

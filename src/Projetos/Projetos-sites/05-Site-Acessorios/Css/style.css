@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+@import url(./Componentes/Header/header.css);
+@import url(./Componentes/Historia/historia.css);
+@import url(./Componentes/Main/main.css);
+@import url(./Componentes/Localidades/localidade.css);
+@import url(./Componentes/Footer/footer.css);
+
+:root {
+    --cor-01: #1A4D2E;
+    --cor-02: #4F6F52;
+    --cor-03: #E8DFCA;
+    --cor-04: #F5EFE6;
+    --cor-05: #D8B58D;
+    --cor-06: #2A2F4F;
+    --cor-07: #917FB3;
+    --cor-08: #03FF03;
+    --cor-09: #FF0303;
+
+    --fonte-header: "Lugrasimo", cursive;
+    --fonte-historia: "Signika Negative", sans-serif;
+    --fonte-main: "Oswald", sans-serif;
+    --fonte-localidade: "Signika Negative", sans-serif;
+    --fonte-footer: "Cinzel", serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--cor-04);
+}

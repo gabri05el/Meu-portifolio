@@ -1,0 +1,30 @@
+.header__div_nav {
+    background-color: var(--cor-03);
+    padding: 0.4rem;
+    border-radius: 0.3rem;
+    border: solid 2px transparent;
+    transition: all 0.5s;
+}
+
+.header__div_nav:hover {
+    background-color: var(--cor-05);
+    border: solid 2px var(--cor-03);
+}
+
+.header__div_nav_link {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.header__div_nav_link_img {
+    width: 30px;
+}
+
+.header__div_nav_link_p {
+    color: var(--cor-01);
+    font-family: var(--fonte-header);
+    font-size: 1rem;
+}
