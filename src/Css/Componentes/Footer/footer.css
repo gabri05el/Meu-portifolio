@@ -1,0 +1,90 @@
+@import url(./Componentes/01-Componente/componente__01.css);
+@import url(./Componentes/02-Componente/componente__02.css);
+
+.footer {
+    background-color: var(--cor-de-fundo-02);
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
+    gap: 1rem;
+    border-radius: 1.5rem;
+}
+
+@media(max-width: 1200px) {
+    .footer__subtitulo {
+        font-size: 2rem;
+    }
+    .footer__texto {
+        font-size: 1.28rem;
+    }
+    .footer__contato_link {
+        font-size: 1.28rem;
+    }
+    .footer__contato_link_a {
+        font-size: 1.38rem;
+    }
+    .footer__contato_link_i {
+        font-size: 1.68rem;
+    }
+}
+@media(max-width: 860px) {
+    .footer {
+        flex-direction: column;
+        padding: 1rem 0;
+        margin-top: 1.5rem;
+        margin-bottom: 0;
+        gap: 0.5rem;
+        border-top: 4px solid var(--cor-fonte-03);
+        border-bottom: 4px solid var(--cor-fonte-03);
+        border-radius: 0;
+    }
+    .footer__subtitulo {
+        font-size: 1.9rem;
+    }
+    .footer__textos,
+    .footer__contato_links {
+        min-width: 100%;
+        padding: 1rem;
+        gap: 0.6rem;
+        border-radius: 0;
+    }
+    .footer__textos {
+        border-right: none;
+    }
+    .footer__texto {
+        font-size: 1.2rem;
+    }
+    .footer__contato_links {
+        border-left: none;
+    }
+    .footer__contato_link {
+        font-size: 1.2rem;
+    }
+    .footer__contato_link_a {
+        font-size: 1.3rem;
+    }
+    .footer__contato_link_i {
+        font-size: 1.52rem;
+        width: 2.2rem;
+    }
+}
+@media(max-width: 600px) {
+    .footer__subtitulo {
+        font-size: 1.75rem;
+    }
+    .footer__texto {
+        font-size: 1.11rem;
+    }
+    .footer__contato_link {
+        font-size: 1.11rem;
+    }
+    .footer__contato_link_a {
+        font-size: 1.14rem;
+    }
+    .footer__contato_link_i {
+        font-size: 1.45rem;
+        width: 1.8rem;
+    }
+}

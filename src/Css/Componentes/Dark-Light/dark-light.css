@@ -1,0 +1,46 @@
+@import url(./Componentes/01-Componente/componente__01.css);
+@import url(./Componentes/02-Componente/componente__02.css);
+@import url(./Componentes/03-Componente/componente__03.css);
+
+:root {
+    --cor-de-fundo-light-01: #708993;
+    --cor-de-fundo-light-02: #A1C2BD;
+    --cor-fonte-light-01: #E7F2EF;
+    --cor-fonte-light-02: #333f44;
+    --cor-fonte-light-03: #32ace0;
+
+    --cor-sol: #ff9807;
+    --cor-lua: #0e467a;
+
+    --cor-forte-fraca-gradient-light: linear-gradient(var(--cor-de-fundo-light-01) 20%, var(--cor-de-fundo-light-02));
+    --cor-fraca-forte-gradient-light: linear-gradient(var(--cor-de-fundo-light-02) 20%, var(--cor-de-fundo-light-01));
+}
+
+.dark_light {
+    background-color: var(--cor-de-fundo-light-01);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 95%;
+    bottom: 1rem;
+    width: 4rem;
+    height: 4rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.modo_icone {
+    color: var(--cor-sol);
+    cursor: pointer;
+    font-size: 2rem;
+    transition: var(--transicao-04s);
+}
+
+.modo_icone:hover {
+    color: #ff9807ad;
+}
+
+.light_body {
+    background-color: var(--cor-de-fundo-light-02);
+}
