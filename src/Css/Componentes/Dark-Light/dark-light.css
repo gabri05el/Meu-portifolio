@@ -1,0 +1,64 @@
+@import url(./Componentes/01-Componente/componente__01.css);
+@import url(./Componentes/02-Componente/componente__02.css);
+@import url(./Componentes/03-Componente/componente__03.css);
+
+.dark_light {
+    position: fixed;
+    right: 3px;
+    bottom: 4px;
+}
+
+.fa-sun,
+.fa-moon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 2rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    transition: var(--transicao-06s);
+}
+
+.fa-moon {
+    background: var(--cor-lua-01);
+    color: var(--cor-lua-02);
+}
+.fa-moon:hover {
+    color: var(--cor-lua-03);
+}
+
+.fa-sun {
+    background: var(--cor-sol-01);
+    color: var(--cor-sol-02);
+}
+.fa-sun:hover {
+    color: var(--cor-sol-03);
+}
+
+.dark {
+    background-color: var(--cor-dark-01);
+}
+
+@media(max-width: 840px) {
+    .dark_light {
+        top: 2rem;
+        left: 45%;
+        right: 45%;
+    }
+    .fa-sun,
+    .fa-moon {
+        font-size: 1.5rem;
+        width: 3rem;
+        height: 3rem;
+    }
+}
+@media(max-width: 600px) {
+    .fa-sun,
+    .fa-moon {
+        font-size: 1rem;
+        width: 2rem;
+        height: 2rem;
+    }
+}

@@ -1,0 +1,12 @@
+.header__titulo {
+    color: var(--cor-light-01);
+    font-family: var(--fonte-header);
+    cursor: default;
+    font-size: 2.2rem;
+    text-shadow: 3px 3px 3px var(--cor-light-05);
+    transition: var(--transicao-06s);
+}
+
+.header__titulo:hover {
+    transform: scale(1.2);
+}

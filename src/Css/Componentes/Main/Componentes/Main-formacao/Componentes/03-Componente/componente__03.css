@@ -1,0 +1,35 @@
+.main__formacao_certificados {
+    background-image: var(--forte-fraca-gradient-light);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.6rem;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+.main__formacao_certificado {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    border: solid 3px var(--cor-light-05);
+    border-radius: 0.7rem;
+}
+
+.main__formacao_certificado_p, 
+.main__formacao_certificado_h4 {
+    font-family: var(--fonte-main);
+    padding: 0.5rem 0;
+}
+
+.main__formacao_certificado_p {
+    color: var(--cor-light-04);
+    font-size: 1.4rem;
+}
+
+.main__formacao_certificado_h4 {
+    color: var(--cor-light-05);
+    font-size: 1.5rem;
+}
