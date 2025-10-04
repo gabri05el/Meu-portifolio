@@ -130,25 +130,16 @@ botao_06.addEventListener('click', () => {
 const mode = document.getElementById("modo_icone");
 
 mode.addEventListener('click', () => {
-    const lightBody = document.querySelector(".body");
-    const lightHeader = document.querySelector(".header");
-    const lightMain = document.querySelector(".main");
-    const lightFooter = document.querySelector(".footer");
+    const body = document.querySelector(".body");
 
-    if(mode.classList.contains("fa-sun")) {
-        mode.classList.remove("fa-sun");
-        mode.classList.add("fa-moon");
+    if(mode.classList.contains("fa-moon")) {
+        mode.classList.remove("fa-moon");
+        mode.classList.add("fa-sun");
 
-        lightBody.classList.add("light_body");
-        lightHeader.classList.add("light_header");
-        lightMain.classList.add("light_main");
-        lightFooter.classList.add("light_footer");
+        body.classList.add("dark");
         return;
     }
-    mode.classList.add("fa-sun");
-    mode.classList.remove("fa-moon");
-    lightBody.classList.remove("light_body");
-    lightHeader.classList.remove("light_header");
-    lightMain.classList.remove("light_main");
-    lightFooter.classList.remove("light_footer");
+    mode.classList.add("fa-moon");
+    mode.classList.remove("fa-sun");
+    body.classList.remove("dark");
 });
