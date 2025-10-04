@@ -125,3 +125,30 @@ botao_06.addEventListener('click', () => {
     certificado_04.classList.add("removido");
     certificado_05.classList.add("removido");
 })
+
+
+const mode = document.getElementById("modo_icone");
+
+mode.addEventListener('click', () => {
+    const lightBody = document.querySelector(".body");
+    const lightHeader = document.querySelector(".header");
+    const lightMain = document.querySelector(".main");
+    const lightFooter = document.querySelector(".footer");
+
+    if(mode.classList.contains("fa-sun")) {
+        mode.classList.remove("fa-sun");
+        mode.classList.add("fa-moon");
+
+        lightBody.classList.add("light_body");
+        lightHeader.classList.add("light_header");
+        lightMain.classList.add("light_main");
+        lightFooter.classList.add("light_footer");
+        return;
+    }
+    mode.classList.add("fa-sun");
+    mode.classList.remove("fa-moon");
+    lightBody.classList.remove("light_body");
+    lightHeader.classList.remove("light_header");
+    lightMain.classList.remove("light_main");
+    lightFooter.classList.remove("light_footer");
+});
