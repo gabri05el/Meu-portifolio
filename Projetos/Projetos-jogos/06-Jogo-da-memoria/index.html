@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jogo da Memoria</title>
+        <link rel="shortcut icon" href="./Icons/jogo-da-memoria.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./Css/style.css">
+        <script defer src="./Js/script.js"></script>
+    </head>
+    <body>
+        <header>
+            <section class="tela__de_login">
+                <div class="tela__login">
+                    <form class="formulario__login">
+                        <div class="div__login">
+                            <i class="fa-solid fa-brain"></i>
+                            <p>Jogo da Memória</p>
+                        </div>
+                        <input type="text" placeholder="Seu Nome" class="input__login">
+                        <button type="button" class="botao botao__login">Play</button>
+                    </form>
+                </div>
+            </section>
+        </header>
+        <mian>
+            <section class="tela__jogo desabilita">
+                <div class="cabecalho">
+                    <div class="titulo">
+                        <p>Jogo da Memória</p>
+                    </div>
+                    <div class="cerebro">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                </div>
+                <div class="jogo">
+                    <div class="menu__jogo">
+                        <p class="nome">gabriel</p>
+                        <p>Tempo: <span class="tempo">00</span> / 120</p>
+                    </div>
+                    <div class="cartas__jogo"></div>
+                </div>
+            </section>
+        </mian>
+        <footer>
+            <section class="tela__de_fim_jogo desabilita">
+                <div class="tela__fim">
+                    <div class="final">
+                        <div class="div__final">
+                            <i class="fa-solid fa-brain"></i>
+                            <p>Fim De Jogo Você Ganhou</p>
+                        </div>
+                        <button type="button" class="botao botao__fim" onclick="doFimParaOLogin()">Reinicie</button>
+                    </div>
+                </div>
+            </section>
+            <section class="tela__de_fim_tempo desabilita">
+                <div class="tela__fim">
+                    <div class="final">
+                        <div class="div__final">
+                            <i class="fa-solid fa-brain"></i>
+                            <p>Fim De Jogo Seu tempo Acabou</p>
+                        </div>
+                        <button type="button" class="botao botao__fim" onclick="doFimParaOLogin()">Reinicie</button>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </body>
+</html>
