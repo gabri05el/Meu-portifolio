@@ -1,0 +1,12 @@
+.main__contato_titulo {
+    color: var(--cor-light-01);
+    cursor: default;
+    font-family: var(--fonte-main);
+    font-size: 2.2rem;
+    margin: 1rem auto;
+    transition: var(--transicao-06s);
+}
+
+.main__contato_titulo:hover {
+    transform: scale(1.1);
+}
