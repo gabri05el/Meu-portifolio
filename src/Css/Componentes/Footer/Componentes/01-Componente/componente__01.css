@@ -1,0 +1,26 @@
+.footer__textos {
+    background-color: var(--cor-light-01);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    gap: 1rem;
+    border-right: 5px solid var(--cor-light-05);
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.footer__subtitulo, 
+.footer__texto {
+    color: var(--cor-light-04);
+    font-family: var(--fonte-footer);
+}
+
+.footer__subtitulo {
+    font-size: 2.2rem;
+    text-shadow: 3px 3px 3px var(--cor-light-05);
+}
+
+.footer__texto {
+    font-size: 1.4rem;
+}
